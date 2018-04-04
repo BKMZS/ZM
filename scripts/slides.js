@@ -1,15 +1,16 @@
-var slides = document.querySelectorAll('#slides .slide');
+var slides = document.getElementsByClassName('slide');
 var currentSlide = 0;
 var slideInterval = setInterval(nextSlide,2000);
 
 function nextSlide(){
-	slides[currentSlide].className = 'slide';
+	slides[currentSlide].classList.remove('showing');
 	currentSlide = (currentSlide+1)%slides.length;
-	slides[currentSlide].className = 'slide showing';
+	slides[currentSlide].classList.add = 'showing';
 }
 
 var playing = true;
-var pauseButton = document.getElementById('pause');
+
+/*var pauseButton = document.getElementById('pause');
 
 function pauseSlideshow(){
 	pauseButton.innerHTML = 'Play';
@@ -26,4 +27,4 @@ function playSlideshow(){
 pauseButton.onclick = function(){
 	if(playing){ pauseSlideshow(); }
 	else{ playSlideshow(); }
-};
+};*/
