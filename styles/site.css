@@ -1,0 +1,503 @@
+/* -------------------- Шрифты, начало --------------------- */
+@font-face {
+	font-family: "Huntsman";
+	src: url('../fonts/Huntsman.otf');
+}
+
+@font-face {
+    font-family: "Exo";
+    src: url('../fonts/Exo.otf');
+}
+
+@font-face {
+	font-family: "Open Sans";
+	src: url('../fonts/OpenSans.ttf');
+}
+
+/* -------------------- Шрифты, конец --------------------- */
+
+body, html {
+	padding: 0;
+	margin: 0;
+	font-family: "Open Sans", sans-serif;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding: 10px 0;
+    /*border-bottom: 1px solid rgba(255, 255, 255, 0.1);*/
+    background-size: 100%;
+}
+
+
+
+
+body {
+  margin: 0;
+  height: 100px;
+  position: relative;
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, rgba(0,0,0,0), rgba(255,255,255,.8));
+}
+
+nav {
+  text-align: center;
+  padding: 7px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  color: #222;
+}
+
+.topmenu > li {
+  display: inline-block;
+  position: relative;
+}
+
+.topmenu > li > a {
+  position: relative;
+  padding: 10px 50px;
+  font-family: "Open Sans", cursive;
+  font-size: 1.5em;
+  line-height: 1;
+  letter-spacing: 0.5px;
+}
+
+.topmenu > li > a:before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 100%;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  transform: translate(-50%, 20px);
+  opacity: 0;
+  transition: .3s;
+}
+.topmenu a:hover {
+    color: #000;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.topmenu li:hover a:before {
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+.submenu {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  top: 100%;
+  width: 250px;
+  padding: 15px 0 15px;
+  margin-top: 15px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 0 30px;
+  box-sizing: border-box;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(-50%, 20px);
+  transition: .3s;
+}
+
+.topmenu > li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.submenu a {
+  font-family: "Open Sans", serif;
+  font-size: 15px;
+  padding: 5px 10px;
+  transition: .3s linear;
+}
+
+.submenu a:hover {background: #FFDEAD;}
+
+
+
+
+body {
+    background: url('../images/back.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#headerInsite {
+	width: 100%;
+	margin: 0 auto;
+	color: #000;
+}
+
+#companyName {
+	text-align: right;
+	font-family: "Huntsman", sans-serif;
+	float: left;
+	margin-left: 15px;
+	font-size: 30px;
+	line-height: 50px;
+	color: #000;
+}
+
+#slides{
+    position: relative;
+    height: 500px;
+    padding: 10px;
+    margin: 250px;
+    list-style-type: none;
+}
+
+.slide{
+    position: absolute;
+    left: 0px;
+    top: -200px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing{
+    opacity: 1;
+    z-index: 2;
+}
+
+.slide{
+    font-size: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+}
+
+.slide:nth-of-type(1){
+    background: red;
+}
+
+.slide:nth-of-type(2){
+    background: orange;
+}
+
+.slide:nth-of-type(3){
+    background: green;
+}
+
+.slide:nth-of-type(4){
+    background: blue;
+}
+
+.slide:nth-of-type(5){
+    background: purple;
+}
+
+/*#navWrap {
+	aligh-items: center;
+	flex-direction: row;
+	position: center;
+	display: flex;
+	height: 50px;
+	margin-left: 320px;
+}
+
+#navWrap a {
+	border-left: 1px solid rgba(255, 255, 255, 0.1);
+	border-right: 1px solid rgba(255, 255, 255, 0.1);
+	font-family: "OpenSans", sans-serif;
+	width: 150px;
+	padding: 15px;
+	color: #000;
+	text-align: center;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	outline: none;
+	text-decoration: none;
+}
+
+/*#navWrap a:last-child {
+	border-left: none;
+}
+
+#navWrap a:hover {
+    color: #000;
+    text-decoration: underline;
+    cursor: pointer;
+}*/
+
+
+footer {
+    float: left;
+    width: 100%;
+    height: 250px;
+    color: #000;
+}
+
+#footerInside {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#copyrights {
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px auto;
+}
+
+#social {
+    padding-top: 20px;
+    width: 100%;
+    height: 40px;
+    bottom: 50px;
+    margin-top: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*border-top: 1px solid rgba(255, 255, 255, 0.1);*/
+}
+
+.socialItem {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+#contacts {
+    position: absolute;
+    left: -300px;
+    top: 20px;
+    width: 340px;
+}
+
+.contactWrap {
+	float: left;
+    width: 400px;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+
+.contactIcon {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+}
+
+#footerNav {
+	aligh-items: center;
+	flex-direction: row;
+	position: center;
+	display: flex;
+	height: 50px;
+	left: 220px;
+	color: #000;
+}
+
+#footerNav a {
+	border-left: 1px solid rgba(255, 255, 255, 0.1);
+	border-right: 1px solid rgba(255, 255, 255, 0.1);
+	display: inline-block;
+	font-family: "OpenSans", sans-serif;
+	width: 150px;
+	padding: 15px;
+	color: #000;
+	text-align: center;
+}
+#footerNav a:hover {
+	background-color: #fff;
+    color: #000;
+}
+
+/* -------------------- НАЧАЛО стилей для главной страницы --------------------- */
+
+#promo {
+    width: 100%;
+    height: 100px;
+    margin-top: -450px;
+    float: left;
+}
+
+#promoText {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    color: #000;
+    font-family: Exo, sans-serif;
+    font-size: 2em;
+    word-spacing: 8px;
+}
+
+/*#mainTextWrap {
+	background: url('../images/promo3.jpg') no-repeat center center fixed;
+    width: 100%;
+    float: center;
+}
+*/
+#mainText {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-family: "OpenSans", sans-serif;
+    margin-top: 10px;
+    color: #000;
+}
+
+.container {
+	float: left;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#promoUs {
+    width: 100%;
+    height: 100px;
+    margin-top: 250px;
+    float: left;
+}
+
+#promoTextUs {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    color: #000;
+    font-family: Exo, sans-serif;
+    font-size: 2em;
+    word-spacing: 8px;
+}
+
+.photoUs {
+    float: center;
+    margin-top: 200px auto;
+    margin-left: 500px;
+    box-shadow: 0 0 30px;
+    border-radius: 15px;
+}
+
+#mainTextUs {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    color: #000;
+    font-family: "OpenSans", sans-serif;
+    word-spacing: 8px;
+}
+
+#guarantee {
+    width: 100%;
+    height: 100px;
+    margin-top: 500px;
+    float: left;
+}
+
+#guaranteeTextPromo {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 400px;
+    color: #000;
+    font-family: Exo, sans-serif;
+    font-size: 2em;
+    word-spacing: 8px;
+}
+
+#guaranteeMainText {
+    float: left;
+    width: 100%;
+    text-align: left;
+    font-family: "OpenSans", sans-serif;
+    margin-top: 10px;
+    margin-left: 600px;
+    color: #000;
+}
+
+#jobsUs {
+    width: 100%;
+    height: 100px;
+    margin-top: 700px;
+    float: left; 
+}
+
+#jobsTextUs {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    color: #000;
+    font-family: Exo, sans-serif;
+    font-size: 2em;
+    word-spacing: 8px;
+}
+
+.jobsPhoto {
+    float: center;
+    margin-top: 200px auto;
+    margin-left: 500px;
+    box-shadow: 0 0 30px;
+    border-radius: 15px;
+}
+
+#feedback {
+    width: 100%;
+    height: 100px;
+    margin-top: 500px;
+    float: left; 
+}
+
+#feedbackText {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    color: #000;
+    font-family: Exo, sans-serif;
+    font-size: 2em;
+    word-spacing: 8px;
+}
+
+#feedbackCarousel {
+    background: url('../images/photoUs.jpg') no-repeat center center fixed;
+    width: 100%;
+    float: center;
+    background-size: cover;   
+}
+/*@media all and (min-width: 1500px) {
+    #promo {
+        height: 720px;
+    }
+}*/
+
+/* ----------------- КОНЕЦ стилей для главной страницы ---------------------- */
