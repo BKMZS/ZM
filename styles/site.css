@@ -181,12 +181,12 @@ body {
 	color: #000;
 }
 
-.slideshow-container{
+.slideshow {
 	max-width: 1200px;
 	position: relative;
 	margin: auto;
 }
-.prev, .next{
+.prev, .next {
 	cursor: pointer;
 	position: absolute;
 	top: 50%;
@@ -200,7 +200,7 @@ body {
 	border-radius: 0 3px 3 px 0;	
 }
 
-.next{
+.next {
 	right: 0;
 	border-radius: 3px 0 0 3px;
 }
@@ -209,7 +209,7 @@ body {
 	background-color: rgba(0,0,0,0.8);	
 }
 
-.mySlides{
+.mySlides {
     text-align: center;
     border-radius: 15px;
     box-shadow: 0 0 30px;
@@ -224,7 +224,7 @@ body {
     left: -550px;
 }
 
-.text{
+.text {
 	color: #f2f2f2;
 	font-size: 20px;
 	padding: 8px 12px;
@@ -232,7 +232,7 @@ body {
 	bottom: 90px;
 }
 
-.dot{
+.spot {
 	cursor: pointer;
 	height: 13px;
 	width: 13px;
@@ -243,11 +243,11 @@ body {
 	transition: background-color 0.6s ease;	
 }
 
-.active, .dot:hover{
+.active, .spot:hover {
 	background-color: #717171;
 }
 
-.fade{
+.fade {
 	-webkit-animation-name: fade;
 	-webkit-animation-duration: 1s; 
 	animation-name: fade;
@@ -601,7 +601,7 @@ p.text-testimonial {
 	height: 14px;
 }
 
-.owl-theme .owl-dots .owl-dot.active span{
+.owl-theme .owl-dots .owl-dot.active span {
 	width: 18px;
 	height: 18px;
 }
