@@ -88,14 +88,3 @@ body:before {
 	from{opacity:.4}
 	to{opacity: 1}	
 }
-
-/*
-
-
-/*@media all and (min-width: 1500px) {
-    #promo {
-        height: 720px;
-    }
-}*/
-
-/* ----------------- КОНЕЦ стилей для главной страницы ---------------------- */

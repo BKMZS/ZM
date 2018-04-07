@@ -44,30 +44,21 @@
 </header>
 
 <!--Карусель-->
-<!--
 <div class="slidershow">
     <div class="mySlides fade">
-        <div class="numbertext">1/4</div>
-        <img src="images/novosel.jpg" style="width: 1200px" alt="">
-        <div class="text">Text</div>
+        <img src="images/novosel.jpg" width="100%" height="100%">
     </div>
 
     <div class="mySlides fade">
-        <div class="numbertext">2/4</div>
-        <img src="images/ldsp.jpg" style="width: 1200px" alt="">
-        <div class="text">Text</div>
+        <img src="images/ldsp.jpg" width="100%" height="100%">
     </div>
 
     <div class="mySlides fade">
-        <div class="numbertext">3/4</div>
-        <img src="images/photoUs.jpg" style="width: 1200px" alt="">
-        <div class="text">Text</div>
+        <img src="images/photoUs.jpg" width="100%" height="100%">
     </div>
 
     <div class="mySlides fade">
-        <div class="numbertext">4/4</div>
-        <img src="images/sb.jpg" style="width: 1200px" alt="">
-        <div class="text">Text</div>
+        <img src="images/sb.jpg" width="100%" height="100%">
     </div>
     <a class="prev" onclick="plusSlides(-1)">&#10094</a>
     <a class="next" onclick="plusSlides(1)">&#10095</a>
@@ -82,9 +73,9 @@
 </div>
 
 <!--УТП-->
-
 <div id="promo" class="promoBlock">
-    <h2 class="promoText">Заполните поля и получите <span class="saleText">скидку 10%</span><br> на первый заказ!</h2>    <h3 class="mainText">Спектр изготавливаемых изделий разнообразен и не ограничивается однотипным подходом.<br>
+    <h2 class="promoText">Заполните поля и получите <span class="saleText">скидку 10%</span><br> на первый заказ!</h2>
+    <h3 id="mainText">Спектр изготавливаемых изделий разнообразен и не ограничивается однотипным подходом.<br>
         На сегодняшний день мы предлагаем изготовление различных видео мебели для гостиной,<br>
         спален, ванных комнат, шкафов для прихожих и коридоров, а также детских комнат.<br>
         Ассортимент насчитвает десятки наименований и постоянно пополняется: стенки, тумбы,<br>
@@ -121,8 +112,9 @@
                 <option>Тумба</option>
                 <option>Шкаф</option>
             </select><br>
+            <input class="buttonStyle" type="button" value="Отправить">
         </section>
-        <section class="container-mini">
+        <section class="container-menu">
                 <textarea placeholder="Ваш комментарий" value=""></textarea>
         </section>
         <section class="container-mini">
@@ -245,7 +237,9 @@
                 <img class="socialItem" src="images/tg.png"></a>
         </div>
 
-        <div id="copyrights">&copy; Зел-Мебель</div>
+        <div id="copyrights">
+            <h2>&copy; Зел-Мебель</h2>           
+        </div>
     </div>
 </footer>
 

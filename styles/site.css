@@ -3,7 +3,6 @@
 	padding: 0;
 	font-weight: normal;
     font-size: 16px;
-    text-align: center;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -50,6 +49,10 @@
 
 /* -------------------- Стили текста, начало --------------------- */
 
+.promoText {
+    text-align: center;
+}
+
 .saleText {
     font-family: "Exo", sans-serif;
     color: red;
@@ -57,7 +60,7 @@
 }
 
 .styleText {
-    padding: 0 6em 0;
+    padding: 1em 10em;
     text-align: left;
     line-height: 2em;
 }
@@ -86,9 +89,83 @@
 
 /* -------------------- Стили текста, конец --------------------- */
 
+/* -------------------- Стили карусели, начало --------------------- */
+
+.slidershow {
+    width: 90%;
+    height: 500px;
+	position: relative;
+	margin: auto;
+}
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3 px 0;	
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);	
+}
+
+.mySlides {
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 30px;
+}
+
+.spot {
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;	
+}
+
+.active, .spot:hover {
+	background-color: #717171;
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1s; 
+	animation-name: fade;
+	animation-duration: 1s;	
+}
+
+@-webkit-keyframes fade {
+	from{opacity:.4}
+	to{opacity: 1}	
+}
+@keyframes fade {
+	from{opacity:.4}
+	to{opacity: 1}	
+}
+
+/* -------------------- Стили карусели, конец --------------------- */
+
 body {
     padding: 0 20em;
-    background-color: #DCDCDC;
+    background: url('../images/back.jpg') no-repeat center center fixed;
+    background-size: 100%;
 }
 
 header {
@@ -97,8 +174,12 @@ header {
 }
 
 #headerInside {
+    width: 100%;
+    font-size: 1em;
     background: url('../images/transparent_white.png') top left repeat;
     padding: 1em;
+    margin-top: -1em;
+    
 }
 
 #companyName {
@@ -118,13 +199,15 @@ header {
 /* -------------------- Форма обратной связи, начало --------------------- */
 
 #container {
+
     width: 600px;
     height: 400px;
     margin: 2em auto;
 }
 
-.container-menu {
+.container-menu, .buttonStyle {
     width: 340px;
+    display: inline-block;
     padding: 1em;
     border-radius: 1em;
     box-shadow: 0 0 0.3em;
@@ -146,7 +229,7 @@ header {
   
 .topmenu > li > a {
     position: relative;
-    padding: 10px 50px;
+    padding: 1em 2em;
     font-family: "Open Sans", cursive;
     font-size: 1.5em;
     line-height: 1;
@@ -158,9 +241,9 @@ header {
     position: absolute;
     z-index: 10;
     left: 50%;
-    top: 100%;
-    width: 10px;
-    height: 10px;
+    top: 2.5em;
+    width: 0.5em;
+    height: 0.5em;
     background: white;
     border-radius: 50%;
     transform: translate(-50%, 20px);
@@ -181,19 +264,19 @@ header {
 .submenu {
     position: absolute;
     z-index: 4;
-    left: 50%;
+    display:inherit;
     top: 100%;
-    width: 250px;
-    padding: 15px 0 15px;
-    margin-top: 15px;
+    width: 15.62em;
+    padding: 1em;
+    margin-top: -1em;
     background: white;
-    border-radius: 15px;
-    box-shadow: 0 0 30px;
-    box-sizing: border-box;
+    border-radius: 1em;
+    box-shadow: 0 0 2em;
+    display: inline;
     visibility: hidden;
     opacity: 0;
     transform: translate(-50%, 20px);
-    transition: .3s;
+    transition: .5s;
 }
   
 .topmenu > li:hover .submenu {
@@ -201,26 +284,28 @@ header {
     opacity: 1;
     transform: translate(-50%, 0);
 }
-  
+
 .submenu a {
-    font-size: 15px;
-    padding: 5px 10px;
-    transition: .3s linear;
+    font-size: 1em;
+    padding: 0.5em;
+    transition: .5s linear;
 }
 
 .submenu a:hover {
     background: #FFDEAD;
+    border-radius: 0.5em;
+    text-decoration: underline;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
 }
 
 nav {
     text-align: center;
-    padding: 7px 0 0;
+    padding: 0.5em 0 0;
 }
   
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
   
 nav a {
@@ -228,6 +313,8 @@ nav a {
     display: block;
     color: #222;
 }
+
+/* -------------------- Меню, начало --------------------- */
 
 /* -------------------- Стили текста, конец --------------------- */
 
@@ -240,7 +327,7 @@ nav a {
     border-radius: 15px;
 }
 
-/* -------------------- Стили для демо, начало --------------------- */
+/* -------------------- Стили для отзывов, начало --------------------- */
 
 h2.title {
 	font-family: "Roboto", sans-serif;
@@ -295,10 +382,6 @@ h2.title span {
 
 }
 
-/* -------------------- Стили для демо, конец --------------------- */
-
-/* -------------------- Основные стили, начало --------------------- */
-
 .containerFeedback {
 	margin:auto;
 }
@@ -309,7 +392,7 @@ h2.title span {
 	text-align: center;
     background-color: #fff;
     border-radius: 1em;
-    box-shadow: 0 0 30px;
+    box-shadow: 0 0 0.5em;
 }
 
 .inner-testimonial > img{
@@ -350,8 +433,6 @@ p.text-testimonial {
 	cursor: default;
 }
 
-/* -------------------- Основные стили, конец --------------------- */
-
 /* -------------------- Изменяем внешний вид элементов управления (точки), начало --------------------- */
 
 .owl-theme .owl-dots .owl-dot span {
@@ -360,11 +441,13 @@ p.text-testimonial {
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
-	width: 1.2em;
-	height: 1.2em;
+	width: 1em;
+	height: 1em;
 }
 
 /* -------------------- Изменяем внешний вид элементов управления (точки), конец --------------------- */
+
+/* -------------------- Стили для отзывов, конец --------------------- */
 
 /* -------------------- Подвал, начало --------------------- */
 
@@ -375,67 +458,44 @@ footer {
 #footerInside {
     position: relative;
     margin: 0 auto;
-    height: 100%;
 }
 
 #copyrights {
-    bottom: 10px;
+    top: 1em;
     text-align: center;
-    margin-top: 10px auto;
+    margin-top: 1em auto;
 }
 
 #social {
-    padding-top: 20px;
-    height: 40px;
-    bottom: 50px;
+    padding-top: 1.5em;
+    height: 2.5em;
+    bottom: 3em;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 .socialItem {
-    width: 40px;
-    height: 40px;
-    margin: 0 5px;
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0 0.5em;
 }
 
 #contacts {
-    position: absolute;
+    position: relative;
+    margin: 1em;
 }
 
 .contactWrap {
     width: 400px;
     margin-bottom: 10px;
-    line-height: 40px;
+    line-height: 2em;
 }
 
 .contactIcon {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
-
-#footerNav {
-	align-items: center;
-	flex-direction: row;
-	position: center;
-	display: flex;
-	height: 50px;
-	color: #000;
-}
-
-#footerNav a {
-	border-left: 1px solid rgba(255, 255, 255, 0.1);
-	border-right: 1px solid rgba(255, 255, 255, 0.1);
-	display: inline-block;
-	width: 150px;
-	padding: 15px;
-	color: #000;
-	text-align: center;
-}
-#footerNav a:hover {
-	background-color: #fff;
-    color: #000;
+    width: 3em;
+    height: 3em;
+    margin-right: 1em;
 }
 
 /* -------------------- Подвал, конец --------------------- */
