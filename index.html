@@ -44,7 +44,7 @@
 </header>
 
 <!--Карусель-->
-
+<!--
 <div class="slidershow">
     <div class="mySlides fade">
         <div class="numbertext">1/4</div>
@@ -83,60 +83,60 @@
 
 <!--УТП-->
 
-<div id="promo">
-    <h2 id="promoText">Заполните поля и получите скидку 10% на первый заказ</h2>
-    <h3 id="mainText">Спектр изготавливаемых изделий разнообразен и не ограничивается однотипным подходом.<br>
+<div id="promo" class="promoBlock">
+    <h2 class="promoText">Заполните поля и получите <span class="saleText">скидку 10%</span><br> на первый заказ!</h2>    <h3 class="mainText">Спектр изготавливаемых изделий разнообразен и не ограничивается однотипным подходом.<br>
         На сегодняшний день мы предлагаем изготовление различных видео мебели для гостиной,<br>
         спален, ванных комнат, шкафов для прихожих и коридоров, а также детских комнат.<br>
         Ассортимент насчитвает десятки наименований и постоянно пополняется: стенки, тумбы,<br>
         комоды, шкафы-купе, столы, встроенные шкафы и полки и многое другое.
     </h3>
+</div>
 
-<div class="container">
+<div id="container">
     <form method="post" onsubmit="send_form();">
-        <section>
-            <select class="cs-select cs-skin-underline">
+        <section class="container-mini">
+            <select class="container-menu">
                 <option value="" disabled selected>Выберите тип помещения</option>
                 <option value="1">Спальня</option>
                 <option value="2">Прихожая</option>
             </select><br>
         </section>
-        <section>
-            <select class="cs-select cs-skin-underline">
+        <section class="container-mini">
+            <select class="container-menu">
                 <option value="" disabled selected>Выберите площадь помещения</option>
                 <option value="1">10м2</option>
                 <option value="2">15м2</option>
             </select><br>
         </section>
-        <section>
-                <select class="cs-select cs-skin-underline">
+        <section class="container-mini">
+                <select class="container-menu">
                 <option value="" disabled selected>Выберите материал</option>
                 <option>ЛДСП</option>
                 <option>МДФ Эмаль</option>
             </select><br>
         </section>
-        <section>
-            <select class="cs-select cs-skin-underline">
+        <section class="container-mini">
+            <select class="container-menu">
                 <option value="" disabled selected>Выберите изделие</option>
                 <option>Тумба</option>
                 <option>Шкаф</option>
             </select><br>
         </section>
-        <section>
-                <textarea placeholder="Введите Ваш номер телефона" input type="number" name="numberPhone" size="15" maxlengh="20" value=""></textarea><br>
-                <textarea placeholder="Ваш комментарий" cols=”25” rows=”10” wrap=”on”></textarea>
+        <section class="container-mini">
+                <textarea placeholder="Ваш комментарий" value=""></textarea>
+        </section>
+        <section class="container-mini">
+                <textarea placeholder="Введите Ваш номер телефона" value=""></textarea><br>
         </section>
     </form><br>
 </div>
 
 <!--Немного о нас-->
-</div>
-<div id="promoUs">
-    <h2 id="promoTextUs">Немного о нас</h2>
-    <div id="photoUs">
-        <img src="images/photoUs.jpg" class="photoUs">
+<div id="promoUs" class="promoBlock">
+    <h2 class="promoText">Немного о нас</h2>
+    <div class="promoPhoto">
     </div>
-    <h3 id="mainTextUs">Мы с радостью возьмёмся за воплощение в жизнь Ваших идей. Во избежание<br>
+    <h3 id="mainText">Мы с радостью возьмёмся за воплощение в жизнь Ваших идей. Во избежание<br>
         недомолвок, все разработки тщательно прорабатываются до малейших деталей<br>
         как от руки, так и при помощи компьютерной графики. Заказчику предоставляется<br>
         3D модель заказа, и при полном соответствии с заявленными требованиями<br>
@@ -154,39 +154,41 @@
 </div>
 
 <!--Мы гарантируем-->
-<div id="guarantee">
-    <div id="guaranteePromo"></div>
-    <h2 id="guaranteeTextPromo">Мы гарантируем:</h2>
-    <h3 id="guaranteeMainText">
-        <p><li>Все заказы выполняются в срок, не превышающий 21 рабочих дней;</li></p>
-        <p><li>Исползование только экологически чистых, изностойких материалов;</li></p>
-        <p><li>Работа осуществляется грамотно, аккуратно, с соблюдением технологий;</li></p>
-        <p><li>Нестадартные решения, уникальный подход к испольнению Вашего заказа;</li></p>
-        <p><li>Доставку, установку по указанному адресу;</li></p>
-        <p><li>Широкий ассортимент предлагаемой продукции;</li></p>
-        <p><li>Гарантию долговечности готового изделия;</li></p>
-        <p><li>Лояльную ценовую политику.</li></p>
-    </h3>
-</div>
-
-
-
-<!--Наши работы за март-->
-<div id="jobsUs">
-    <h2 id="jobsTextUs">Наши работы за март</h2>
-    <div id="jobsPhoto">
-        <img src="images/photoUs.jpg" class="jobsPhoto">
+<div id="guarantee" class="promoBlock">
+    <h2 class="promoText">Мы гарантируем:</h2>
+    <div id="mainText">
+        <h3 class="styleText">
+            <ul>
+            <p><li>Все заказы выполняются в срок, не превышающий 21 рабочих дней;</li></p>
+            <p><li>Исползование только экологически чистых, изностойких материалов;</li></p>
+            <p><li>Работа осуществляется грамотно, аккуратно, с соблюдением технологий;</li></p>
+            <p><li>Нестадартные решения, уникальный подход к испольнению Вашего заказа;</li></p>
+            <p><li>Доставку, установку по указанному адресу;</li></p>
+            <p><li>Широкий ассортимент предлагаемой продукции;</li></p>
+            <p><li>Гарантию долговечности готового изделия;</li></p>
+            <p><li>Лояльную ценовую политику.</li></p>
+            </ul>
+        </h3>
     </div>
 </div>
 
 
 
+<!--Наши работы за март-->
+<div id="jobsUs" class="promoBlock">
+    <h2 class="promoText">Наши работы за март</h2>
+        <div class="promoPhoto">
+        </div>
+</div>
+
+
+
 <!--Отзывы-->
-<div id="feedback">
-    <h2 id="feedbackText">Отзывы</h2>
-<div id="feedback">
+<div id="feedback" class="promoBlock">
+    <h2 class="promoText">Отзывы</h2>
+</div>
 		<div class="containerFeedback">
-			<!-- Плавная анимация fadeIn -->
+			<!--Плавная анимация fadeIn-->
 			<div class="block-one-example">
 				<h2 class="title second" id="example"><span>Больше половины наших заказчиков, приходят к нам снова</span></h2>
 				<div class="owl-carousel block-items">
@@ -194,7 +196,7 @@
 				    	<div class="inner-testimonial">
 				    		<img src="images/client1.png" class="full-opacity" alt="Клиент 1">
 				    		<h3 class="city-name">Иван, Москва</h3>
-				    		<p class="text-testimonial">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рот последний на берегу послушавшись, подзаголовок! Грамматики живет власти текст дорогу.</p>
+				    		<p class="text-testimonial">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.<br> Рот последний на берегу послушавшись, подзаголовок! Грамматики живет власти текст дорогу.</p>
 				    	</div>
 			    	</div>
 				    <div class="item">
@@ -212,16 +214,11 @@
 				    	</div>
 			    	</div>
 				</div>
-			</div><!-- .block-one-example -->
-		</div>		
-    </div>
-</div>
-<!--<div id="feedback">
-    <h2 id="feedbackText">Отзывы</h2>
-    <div id="feedbackCarousel"></div>
-</div>-->
+			</div>
+		</div>
 
 <!--Контакты-->
+
 <footer>
     <div id="footerInside">
 

@@ -1,4 +1,14 @@
+* {
+    margin: 0;
+	padding: 0;
+	font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
 /* -------------------- Шрифты, начало --------------------- */
+
 @font-face {
     font-family: "Huntsman";
     font-style: normal;
@@ -38,472 +48,209 @@
 
 /* -------------------- Шрифты, конец --------------------- */
 
-body, html {
-	padding: 0;
-	margin: 0;
-	font-family: "Open Sans", sans-serif;
+/* -------------------- Стили текста, начало --------------------- */
+
+.saleText {
+    font-family: "Exo", sans-serif;
+    color: red;
+    font-size: 1em;
+}
+
+.styleText {
+    padding: 0 6em 0;
+    text-align: left;
+    line-height: 2em;
+}
+
+.promoBlock {
+    background: url('../images/transparent_white.png') top left repeat;
+    padding: 0.5em;
+    margin: 1em;
+    box-shadow: 0 0 0.3em;
+}
+
+.promoText {
+    color: #000;
+    padding: 1em;
+    margin: auto;
+    font-family: "Exo", sans-serif;
+    font-size: 2em;
+    word-spacing: 8px;
+}
+
+#mainText {
+    padding: 1em;
+    text-align: center;
+    color: #A9A9A9;
+}
+
+/* -------------------- Стили текста, конец --------------------- */
+
+body {
+    padding: 0 20em;
+    background-color: #DCDCDC;
 }
 
 header {
     position: relative;
-    width: 100%;
-    height: 50px;
     padding: 10px 0;
-
-    background-size: 100%;
 }
 
-body {
-  margin: 0;
-  height: 100px;
-  position: relative;
-}
-
-body:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(45deg, rgba(0,0,0,0), rgba(255,255,255,.8));
-}
-
-nav {
-  text-align: center;
-  padding: 7px 0 0;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav a {
-  text-decoration: none;
-  display: block;
-  color: #222;
-}
-
-.topmenu > li {
-  display: inline-block;
-  position: relative;
-}
-
-.topmenu > li > a {
-  position: relative;
-  padding: 10px 50px;
-  font-family: "Open Sans", cursive;
-  font-size: 1.5em;
-  line-height: 1;
-  letter-spacing: 0.5px;
-}
-
-.topmenu > li > a:before {
-  content: "";
-  position: absolute;
-  z-index: 10;
-  left: 50%;
-  top: 100%;
-  width: 10px;
-  height: 10px;
-  background: white;
-  border-radius: 50%;
-  transform: translate(-50%, 20px);
-  opacity: 0;
-  transition: .3s;
-}
-.topmenu a:hover {
-    color: #000;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.topmenu li:hover a:before {
-  transform: translate(-50%, 0);
-  opacity: 1;
-}
-
-.submenu {
-  position: absolute;
-  z-index: 4;
-  left: 50%;
-  top: 100%;
-  width: 250px;
-  padding: 15px 0 15px;
-  margin-top: 15px;
-  background: white;
-  border-radius: 15px;
-  box-shadow: 0 0 30px;
-  box-sizing: border-box;
-  visibility: hidden;
-  opacity: 0;
-  transform: translate(-50%, 20px);
-  transition: .3s;
-}
-
-.topmenu > li:hover .submenu {
-  visibility: visible;
-  opacity: 1;
-  transform: translate(-50%, 0);
-}
-
-.submenu a {
-  font-family: "Open Sans", serif;
-  font-size: 15px;
-  padding: 5px 10px;
-  transition: .3s linear;
-}
-
-.submenu a:hover {background: #FFDEAD;}
-
-
-
-body {
-    background: url('../images/back.jpg') no-repeat center center fixed;
-    background-size: cover;
-}
-
-#headerInsite {
-	width: 100%;
-	margin: 0 auto;
-	color: #000;
+#headerInside {
+    background: url('../images/transparent_white.png') top left repeat;
+    padding: 1em;
 }
 
 #companyName {
-	text-align: right;
+	text-align: left;
 	font-family: "Huntsman", sans-serif;
-	float: left;
 	margin-left: 15px;
 	font-size: 30px;
 	line-height: 50px;
 	color: #000;
 }
 
-.slideshow {
-	max-width: 1200px;
-	position: relative;
-	margin: auto;
-}
-.prev, .next {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	width: auto;
-	margin-top: -22px;
-	padding: 16px;
-	color: white;
-	font-weight: bold;
-	font-size: 18px;
-	transition: 0.6s ease;
-	border-radius: 0 3px 3 px 0;	
+#promo, #promoUs, #guarantee, #jobsUs, #feedback, #footerInside, .containerFeedback {
+    max-width: 960px;
+    margin: 4em auto;
 }
 
-.next {
-	right: 0;
-	border-radius: 3px 0 0 3px;
+/* -------------------- Форма обратной связи, начало --------------------- */
+
+#container {
+    width: 600px;
+    height: 400px;
+    margin: 2em auto;
 }
 
-.prev:hover, .next:hover {
-	background-color: rgba(0,0,0,0.8);	
-}
-
-.mySlides {
-    text-align: center;
-    border-radius: 15px;
-    box-shadow: 0 0 30px;
-}
-
-.numbertext {
-	color: #000;
-	font-size: 20px;
-	padding: 8px 12px;
-	position: relative;
-    bottom: -50px;
-    left: -550px;
-}
-
-.text {
-	color: #f2f2f2;
-	font-size: 20px;
-	padding: 8px 12px;
-	position: relative;
-	bottom: 90px;
-}
-
-.spot {
-	cursor: pointer;
-	height: 13px;
-	width: 13px;
-	margin: 0 2px;
-	background-color: #bbb;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;	
-}
-
-.active, .spot:hover {
-	background-color: #717171;
-}
-
-.fade {
-	-webkit-animation-name: fade;
-	-webkit-animation-duration: 1s; 
-	animation-name: fade;
-	animation-duration: 1s;	
-}
-
-@-webkit-keyframes fade {
-	from{opacity:.4}
-	to{opacity: 1}	
-}
-@keyframes fade {
-	from{opacity:.4}
-	to{opacity: 1}	
-}
-
-
-footer {
-    float: left;
-    width: 100%;
-    height: 250px;
-    color: #000;
-}
-
-#footerInside {
-    position: relative;
-    width: 1100px;
-    margin: 0 auto;
-    height: 100%;
-}
-
-#copyrights {
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-    margin-top: 10px auto;
-}
-
-#social {
-    padding-top: 20px;
-    width: 100%;
-    height: 40px;
-    bottom: 50px;
-    margin-top: 600px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.socialItem {
-    width: 40px;
-    height: 40px;
-    margin: 0 5px;
-}
-
-#contacts {
-    position: absolute;
-    left: -200px;
-    top: 20px;
+.container-menu {
     width: 340px;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 0 0 0.3em;
 }
-
-.contactWrap {
-	float: left;
-    width: 400px;
-    margin-bottom: 10px;
-    line-height: 40px;
-}
-
-.contactIcon {
-    width: 40px;
-    height: 40px;
+.container-mini {
     float: left;
-    margin-right: 10px;
+    padding: 0.4em;
 }
 
-#footerNav {
-	align-items: center;
-	flex-direction: row;
-	position: center;
-	display: flex;
-	height: 50px;
-	left: 220px;
-	color: #000;
-}
+/* -------------------- Форма обратной связи, конец --------------------- */
 
-#footerNav a {
-	border-left: 1px solid rgba(255, 255, 255, 0.1);
-	border-right: 1px solid rgba(255, 255, 255, 0.1);
-	display: inline-block;
-	font-family: "OpenSans", sans-serif;
-	width: 150px;
-	padding: 15px;
-	color: #000;
-	text-align: center;
+
+
+/* -------------------- Меню, начало --------------------- */
+
+.topmenu > li {
+    display: inline-block;
 }
-#footerNav a:hover {
-	background-color: #fff;
+  
+.topmenu > li > a {
+    position: relative;
+    padding: 10px 50px;
+    font-family: "Open Sans", cursive;
+    font-size: 1.5em;
+    line-height: 1;
+    letter-spacing: 0.5px;
+}
+  
+.topmenu > li > a:before {
+    content: " ";
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    top: 100%;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    transform: translate(-50%, 20px);
+    opacity: 0;
+    transition: .3s;
+}
+.topmenu a:hover {
     color: #000;
+    text-decoration: underline;
+    cursor: pointer;
+}
+  
+.topmenu li:hover a:before {
+    transform: translate(-50%, 0);
+    opacity: 1;
+}
+  
+.submenu {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    top: 100%;
+    width: 250px;
+    padding: 15px 0 15px;
+    margin-top: 15px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 30px;
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, 20px);
+    transition: .3s;
+}
+  
+.topmenu > li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+  
+.submenu a {
+    font-size: 15px;
+    padding: 5px 10px;
+    transition: .3s linear;
 }
 
-/* -------------------- НАЧАЛО стилей для главной страницы --------------------- */
-
-#promo {
-    width: 100%;
-    height: 100px;
-    margin-top: -450px;
-    float: left;
+.submenu a:hover {
+    background: #FFDEAD;
 }
 
-#promoText {
-    float: left;
-    width: 100%;
+nav {
     text-align: center;
-    margin-top: 100px;
-    color: #000;
-    font-family: Exo, sans-serif;
-    font-size: 2em;
-    word-spacing: 8px;
+    padding: 7px 0 0;
+}
+  
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+nav a {
+    text-decoration: none;
+    display: block;
+    color: #222;
 }
 
-#mainText {
-    float: left;
-    width: 100%;
-    text-align: center;
-    font-family: "OpenSans", sans-serif;
-    margin-top: 10px;
-    color: #000;
-}
+/* -------------------- Стили текста, конец --------------------- */
 
-.container {
-	float: left;
-    width: 100%;
-    margin-top: 30px;
-    text-align: center;
-}
-
-#promoUs {
-    width: 100%;
-    height: 100px;
-    margin-top: 250px;
-    float: left;
-}
-
-#promoTextUs {
-    float: left;
-    width: 100%;
-    text-align: center;
-    margin-top: 100px;
-    color: #000;
-    font-family: Exo, sans-serif;
-    font-size: 2em;
-    word-spacing: 8px;
-}
-
-.photoUs {
-    float: center;
-    margin-top: 200px auto;
-    margin-left: 500px;
+.promoPhoto {
+    margin: 2em auto;
+    width: 800px;
+    height: 400px;
+    background: url('../images/photoUs.jpg');
     box-shadow: 0 0 30px;
     border-radius: 15px;
 }
 
-#mainTextUs {
-    float: left;
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
-    color: #000;
-    font-family: "OpenSans", sans-serif;
-    word-spacing: 8px;
-}
-
-#guarantee {
-    width: 100%;
-    height: 100px;
-    margin-top: 500px;
-    float: left;
-}
-
-#guaranteeTextPromo {
-    float: left;
-    width: 100%;
-    text-align: center;
-    margin-top: 400px;
-    color: #000;
-    font-family: Exo, sans-serif;
-    font-size: 2em;
-    word-spacing: 8px;
-}
-
-#guaranteeMainText {
-    float: left;
-    width: 100%;
-    text-align: left;
-    font-family: "OpenSans", sans-serif;
-    margin-top: 10px;
-    margin-left: 600px;
-    color: #000;
-}
-
-#jobsUs {
-    width: 100%;
-    height: 100px;
-    margin-top: 700px;
-    float: left; 
-}
-
-#jobsTextUs {
-    float: left;
-    width: 100%;
-    text-align: center;
-    margin-top: 100px;
-    color: #000;
-    font-family: Exo, sans-serif;
-    font-size: 2em;
-    word-spacing: 8px;
-}
-
-.jobsPhoto {
-    float: center;
-    margin-top: 200px auto;
-    margin-left: 500px;
-    box-shadow: 0 0 30px;
-    border-radius: 15px;
-}
-
-#feedback {
-    width: 100%;
-    height: 100px;
-    margin-top: 500px;
-    float: left; 
-}
-
-#feedbackText {
-    float: left;
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
-    color: #000;
-    font-family: Exo, sans-serif;
-    font-size: 2em;
-    word-spacing: 8px;
-}
-
-/*Стили для демо*/
+/* -------------------- Стили для демо, начало --------------------- */
 
 h2.title {
-	background-color: #503d3f;
-	color:#000;
 	font-family: "Roboto", sans-serif;
-	line-height: 60px;
+	line-height: 1.5em;
 	font-weight: 400;
 	position: relative;
 	text-align: center;
-	font-size: 28px;
-    margin-bottom: 10px;
+    font-size: 2em;
+    padding: 0.2em;
+    margin-bottom: 0.4em;
     border-radius: 15px;
     box-shadow: 0 0 30px;
 }
@@ -514,51 +261,60 @@ h2.title:after {
 	bottom:-35px;
 	left:0;
 	right: 0;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 	width: 1px;
 	border:20px solid transparent;
 	border-top-color: #503d3f;
     z-index: 10;
 }
 
-h2.title + .owl-carousel .owl-dots .owl-dot.active span {background-color: #503d3f;}
+h2.title + .owl-carousel .owl-dots .owl-dot.active span {
+    background-color: #503d3f;
+}
 
-h2.title.second {background-color: #EA6D13;}
-h2.title.second:after {border-top-color: #EA6D13;}
-h2.title.second + .owl-carousel .owl-dots .owl-dot.active span {background-color: #EA6D13;}
+h2.title.second {
+    background-color: #EA6D13;
+}
+h2.title.second:after {
+    border-top-color: #EA6D13;
+}
+h2.title.second + .owl-carousel .owl-dots .owl-dot.active span {
+    background-color: #EA6D13;
+}
 
-h2.title span{
+h2.title span {
 	color:#fff;
 	font-family: "Roboto", sans-serif;
-	line-height: 40px;
+	line-height: 1.5em;
 	font-weight: 700;
 }
 
 .block-one-example {
-	margin:30px 0;
-    position: relative;
-    margin-top: -500px;
+    width: 960px;
+    margin: 2em 0;
+
 }
 
-/*Основные стили*/
+/* -------------------- Стили для демо, конец --------------------- */
+
+/* -------------------- Основные стили, начало --------------------- */
 
 .containerFeedback {
-	max-width: 960px;
-	width: 90%;
-	margin:0 auto;
+	margin:auto;
 }
 
 .inner-testimonial {
+    padding: 1em;
+    margin: auto 0;
 	text-align: center;
     background-color: #fff;
-    border-radius: 15px;
+    border-radius: 1em;
     box-shadow: 0 0 30px;
 }
 
 .inner-testimonial > img{
 	max-width: 128px;
-	margin:0 auto 15px;
+	margin:0 auto 1em;
 	opacity: 0;
 	-webkit-transition:all 1.3s linear;
 	transition:all 1.3s linear;
@@ -576,40 +332,110 @@ h2.title span{
 }
 
 h3.city-name {
-	padding:10px 0;
-	font-size: 20px;
+	padding: 0.5em 0;
+	font-size: 1.5em;
 	font-family: "Roboto", sans-serif;
 	font-weight: 900;
 }
 
 p.text-testimonial {
-	padding:10px 0;
-	font-size: 20px;
+	padding: 0.5em 0;
+	font-size: 1.2em;
 	font-family: "Roboto", sans-serif;
 	font-weight: 300;
-	line-height: 25px;
+	line-height: 1.7em;
 }
 
 .block-items {
 	cursor: default;
 }
 
-/*Изменяем внешний вид элементов управления (точки) */
+/* -------------------- Основные стили, конец --------------------- */
+
+/* -------------------- Изменяем внешний вид элементов управления (точки), начало --------------------- */
 
 .owl-theme .owl-dots .owl-dot span {
-	width: 14px;
-	height: 14px;
+	width: 1em;
+	height: 1em;
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
-	width: 18px;
-	height: 18px;
+	width: 1.2em;
+	height: 1.2em;
 }
 
-/*@media all and (min-width: 1500px) {
-    #promo {
-        height: 720px;
-    }
-}*/
+/* -------------------- Изменяем внешний вид элементов управления (точки), конец --------------------- */
 
-/* ----------------- КОНЕЦ стилей для главной страницы ---------------------- */
+/* -------------------- Подвал, начало --------------------- */
+
+footer {
+    height: 150px;
+}
+
+#footerInside {
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#copyrights {
+    bottom: 10px;
+    text-align: center;
+    margin-top: 10px auto;
+}
+
+#social {
+    padding-top: 20px;
+    height: 40px;
+    bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.socialItem {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+#contacts {
+    position: absolute;
+}
+
+.contactWrap {
+    width: 400px;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+
+.contactIcon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+#footerNav {
+	align-items: center;
+	flex-direction: row;
+	position: center;
+	display: flex;
+	height: 50px;
+	color: #000;
+}
+
+#footerNav a {
+	border-left: 1px solid rgba(255, 255, 255, 0.1);
+	border-right: 1px solid rgba(255, 255, 255, 0.1);
+	display: inline-block;
+	width: 150px;
+	padding: 15px;
+	color: #000;
+	text-align: center;
+}
+#footerNav a:hover {
+	background-color: #fff;
+    color: #000;
+}
+
+/* -------------------- Подвал, конец --------------------- */
