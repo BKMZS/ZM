@@ -2,251 +2,429 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link href="styles/site.css" rel="stylesheet">
-    <link href="libs/animate/animate.css" rel="stylesheet">
-	<link href="libs/owl-carousel/owl.carousel.min.css" rel="stylesheet">
-	<link href="libs/owl-carousel/owl.theme.default.min.css" rel="stylesheet">
-
-    <title>Мебель на заказ в Зеленограде</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="styles/feedback_style.css" rel="stylesheet"> <!-- Resource style -->
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/site2.css" rel="stylesheet">
+    <title>Мебель на заказ в  Зеленограде</title>
 </head>
 <body>
-<header>
-    <div id="headerInside">
-        <div id="logo"></div>
-        <div id="companyName">Зел-Мебель</div>
-        <nav>
-            <ul class="topmenu">
-                <li> <a href="">Главная</a></li>
-                <li> <a href="" class="down">Наши работы</a>
-                    <ul class="submenu">
-                        <li><a href="">Мебель в ванную</a></li>
-                        <li><a href="">Мебель в гостиную и ТВ зоны</a></li>
-                        <li><a href="">Мебель в детскую</a></li>
-                        <li><a href="">Полки и стеллажи</a></li>
-                        <li><a href="">Прихожие</a></li>
-                        <li><a href="">Тумбы</a></li>
-                        <li><a href="">Шкафы и шкафы-купе</a></li>
-                    </ul>
-                </li>
-                <li> <a href="" class="down">Блог</a>
-                    <ul class="submenu">
-                        <li><a href="">Искусственный камень для столешниц и раковин</a></li>
-                        <li><a href="">Мебель с загруглёнными углами</a></li>
-                        <li><a href="">Маленькая ванная - используем пространоство по макимуму</a></li>
-                        <li><a href="">Маленький коридор - делаем из минусоы плюсы</a></li>   
-                    </ul>
-                </li>
-                <li><a href="">Сотрудничество</a></li>
-                <li><a href="">Наши контакты</a></li>
-            </ul>
-        </nav>
-    </div>
+
+<header id="main">
+    <div class="container">
+        <div class="row main_head">
+            <div class="col-lg-2 main_logo text-center">
+                <div class="main_logo_border">
+                    <h2 class="logo_style"><span>Зел</span> Мебель</h2>
+                    <h6>Изготавливаем мебель на заказ</h6>
+                </div>
+            </div>
+            <div class="row header_menu">
+                <div class="col-lg-12 offset-1 text-center">
+                    <nav>
+                        <ul class="topmenu">
+                            <li> <a href="">Главная</a></li>
+                            <li> <a href="" class="down">Наши работы</a>
+                                <ul class="submenu">
+                                    <li><a href="">Мебель в ванную</a></li>
+                                    <li><a href="">Мебель в гостиную и ТВ зоны</a></li>
+                                    <li><a href="">Мебель в детскую</a></li>
+                                    <li><a href="">Полки и стеллажи</a></li>
+                                    <li><a href="">Прихожие</a></li>
+                                    <li><a href="">Тумбы</a></li>
+                                    <li><a href="">Шкафы и шкафы-купе</a></li>
+                                </ul>
+                            </li>
+                            <li> <a href="" class="down">Блог</a>
+                                <ul class="submenu">
+                                    <li><a href="">Искусственный камень для столешниц и раковин</a></li>
+                                    <li><a href="">Мебель с загруглёнными углами</a></li>
+                                    <li><a href="">Маленькая ванная - используем пространоство по макимуму</a></li>
+                                    <li><a href="">Маленький коридор - делаем из минусоы плюсы</a></li>   
+                                </ul>
+                            </li>
+                            <li><a href="">Сотрудничество</a></li>
+                            <li><a href="">Наши контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div><!--header_menu end-->
+        </div><!--main_head-->
+    </div><!--container end-->
 </header>
 
-<!--Карусель-->
-<div class="slidershow">
-    <div class="mySlides fade">
-        <img src="images/novosel.jpg" width="100%" height="100%">
-    </div>
-
-    <div class="mySlides fade">
-        <img src="images/ldsp.jpg" width="100%" height="100%">
-    </div>
-
-    <div class="mySlides fade">
-        <img src="images/photoUs.jpg" width="100%" height="100%">
-    </div>
-
-    <div class="mySlides fade">
-        <img src="images/sb.jpg" width="100%" height="100%">
-    </div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-    <a class="next" onclick="plusSlides(1)">&#10095</a>
-</div>
-<br>
-
-<div style="text-align: center;">
-    <span class="spot" onclick="currentSlide(1)"></span>
-    <span class="spot" onclick="currentSlide(2)"></span>
-    <span class="spot" onclick="currentSlide(3)"></span>
-    <span class="spot" onclick="currentSlide(4)"></span>
-</div>
-
-<!--УТП-->
-<div id="promo" class="promoBlock">
-    <h2 class="promoText">Заполните поля и получите <span class="saleText">скидку 10%</span><br> на первый заказ!</h2>
-    <h3 id="mainText">Спектр изготавливаемых изделий разнообразен и не ограничивается однотипным подходом.<br>
-        На сегодняшний день мы предлагаем изготовление различных видео мебели для гостиной,<br>
-        спален, ванных комнат, шкафов для прихожих и коридоров, а также детских комнат.<br>
-        Ассортимент насчитвает десятки наименований и постоянно пополняется: стенки, тумбы,<br>
-        комоды, шкафы-купе, столы, встроенные шкафы и полки и многое другое.
-    </h3>
-</div>
-
-<div id="container">
-    <form method="post" onsubmit="send_form();">
-        <section class="container-mini">
-            <select class="container-menu">
-                <option value="" disabled selected>Выберите тип помещения</option>
-                <option value="1">Спальня</option>
-                <option value="2">Прихожая</option>
-            </select><br>
-        </section>
-        <section class="container-mini">
-            <select class="container-menu">
-                <option value="" disabled selected>Выберите площадь помещения</option>
-                <option value="1">10м2</option>
-                <option value="2">15м2</option>
-            </select><br>
-        </section>
-        <section class="container-mini">
-                <select class="container-menu">
-                <option value="" disabled selected>Выберите материал</option>
-                <option>ЛДСП</option>
-                <option>МДФ Эмаль</option>
-            </select><br>
-        </section>
-        <section class="container-mini">
-            <select class="container-menu">
-                <option value="" disabled selected>Выберите изделие</option>
-                <option>Тумба</option>
-                <option>Шкаф</option>
-            </select><br>
-            <input class="buttonStyle" type="button" value="Отправить">
-        </section>
-        <section class="container-menu">
-                <textarea placeholder="Ваш комментарий" value=""></textarea>
-        </section>
-        <section class="container-mini">
-                <textarea placeholder="Введите Ваш номер телефона" value=""></textarea><br>
-        </section>
-    </form><br>
-</div>
-
-<!--Немного о нас-->
-<div id="promoUs" class="promoBlock">
-    <h2 class="promoText">Немного о нас</h2>
-    <div class="promoPhoto">
-    </div>
-    <h3 id="mainText">Мы с радостью возьмёмся за воплощение в жизнь Ваших идей. Во избежание<br>
-        недомолвок, все разработки тщательно прорабатываются до малейших деталей<br>
-        как от руки, так и при помощи компьютерной графики. Заказчику предоставляется<br>
-        3D модель заказа, и при полном соответствии с заявленными требованиями<br>
-        подписывается договор.
-        <p>За период пребывания на рынке мы наработали внушительную клиентскую базу и<br>
-            зарекомендовали себя как ответственного исполнителя. Качественный сервис,<br>
-            широкий ассортимент, гибкие цены, всё это позволяет быть<br>
-            конкурентоспособными в независимости от времени.
-        </p>
-        <p>Для того чтобы оформить заказ, Вы можете оставить онлайн заявку на сайте или<br>
-            же позвонить по указанным номерам телефона. В кратчайшие сроки менеджер<br>
-            свяжется с Вами и обсудит все интересующие детали
-        </p>
-    </h3>
-</div>
-
-<!--Мы гарантируем-->
-<div id="guarantee" class="promoBlock">
-    <h2 class="promoText">Мы гарантируем:</h2>
-    <div id="mainText">
-        <h3 class="styleText">
-            <ul>
-            <p><li>Все заказы выполняются в срок, не превышающий 21 рабочих дней;</li></p>
-            <p><li>Исползование только экологически чистых, изностойких материалов;</li></p>
-            <p><li>Работа осуществляется грамотно, аккуратно, с соблюдением технологий;</li></p>
-            <p><li>Нестадартные решения, уникальный подход к испольнению Вашего заказа;</li></p>
-            <p><li>Доставку, установку по указанному адресу;</li></p>
-            <p><li>Широкий ассортимент предлагаемой продукции;</li></p>
-            <p><li>Гарантию долговечности готового изделия;</li></p>
-            <p><li>Лояльную ценовую политику.</li></p>
-            </ul>
-        </h3>
-    </div>
-</div>
-
-
-
-<!--Наши работы за март-->
-<div id="jobsUs" class="promoBlock">
-    <h2 class="promoText">Наши работы за март</h2>
-        <div class="promoPhoto">
-        </div>
-</div>
-
-
-
-<!--Отзывы-->
-<div id="feedback" class="promoBlock">
-    <h2 class="promoText">Отзывы</h2>
-</div>
-		<div class="containerFeedback">
-			<!--Плавная анимация fadeIn-->
-			<div class="block-one-example">
-				<h2 class="title second" id="example"><span>Больше половины наших заказчиков, приходят к нам снова</span></h2>
-				<div class="owl-carousel block-items">
-				    <div class="item">
-				    	<div class="inner-testimonial">
-				    		<img src="images/client1.png" class="full-opacity" alt="Клиент 1">
-				    		<h3 class="city-name">Иван, Москва</h3>
-				    		<p class="text-testimonial">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.<br> Рот последний на берегу послушавшись, подзаголовок! Грамматики живет власти текст дорогу.</p>
-				    	</div>
-			    	</div>
-				    <div class="item">
-				    	<div class="inner-testimonial">
-							<img src="images/client2.png" class="full-opacity" alt="Клиент 2">
-				    		<h3 class="city-name">Светлана, Екатеринбург</h3>
-				    		<p class="text-testimonial">Ты вопроса проектах lorem, заглавных, безопасную свою журчит себя за буквоград родного, текстов. Она мир переписали скатился напоивший до собрал первую коварных. Щеке журчит буквенных океана знаках дал но, предупредила.</p>
-				    	</div>
-			    	</div>
-				    <div class="item">
-				    	<div class="inner-testimonial">
-				    		<img src="images/client3.png" class="full-opacity" alt="Клиент 3">
-				    		<h3 class="city-name">Александр, Ярославль</h3>
-				    		<p class="text-testimonial">Живет заголовок своих, маленькая осталось буквоград собрал рыбного ведущими ручеек букв, продолжил моей предложения заманивший безопасную даже послушавшись всемогущая, себя подпоясал. Вопрос пустился имеет снова, текстов прямо.</p>
-				    	</div>
-			    	</div>
-				</div>
-			</div>
-		</div>
-
-<!--Контакты-->
-
-<footer>
-    <div id="footerInside">
-
-        <div id="contacts">
-            <div class="contactWrap">
-                <img src="images/envelope.svg" class="contactIcon">
-                zel-mebel89@mail.ru
-            </div>
-            <div class="contactWrap">
-                <img src="images/phone-call.svg" class="contactIcon">
-                +7 (915) 335-43-56
-            </div>
-            <div class="contactWrap">
-                <img src="images/placeholder.svg" class="contactIcon">
-                Москва, Зеленоград
+<section id="main_slide_show">
+    <div class="container">
+        <div class="row slide-show">
+            <div class="col-lg-12 text-center">
+                <div class="slides">
+                    <ul> <!-- Слайды -->
+                        <li><img src="images/pic1.jpg" alt="image01" />
+                            <div>Описание #1</div>
+                        </li>
+                        <li><img src="images/pic2.jpg" alt="image02" />
+                            <div>Описание #2</div>
+                        </li>
+                        <li><img src="images/pic3.jpg" alt="image03" />
+                            <div>Описание #3</div>
+                        </li>
+                        <li><img src="images/pic4.jpg" alt="image04" />
+                            <div>Описание #4</div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div id="social">
-            <a href="https://vk.com/polno_mebeli" target="_blank">
-                <img class="socialItem" src="images/vk.png"></a>
-            <a href="https://www.instagram.com/zel_mebel/" target="_blank">
-                <img class="socialItem" src="images/ig.png"></a>
-            <a href="https://t.me/zelmebel89" target="_blank">
-                <img class="socialItem" src="images/tg.png"></a>
-        </div>
+    </div>
+</section>
 
-        <div id="copyrights">
-            <h2>&copy; Зел-Мебель</h2>           
+<section id="main_promo_info">
+    <div class="container">
+        <div class="row promo_info">
+            <div class="col-lg-8 offset-4 text-center">
+                <div class="promo_block">
+                    <h2 class="promo_text">Заполните поля и получите <span class="sale_text">cкидку 10%</span> на первый заказ!</h2>
+                    <h3 class="main_text">Спектр изготавливаемых изделий разнообразен и не ограничивается однотипным подходом. На сегодняшний день мы предлагаем изготовление различных видео мебели для гостиной, спален, ванных комнат, шкафов для прихожих и коридоров, а также детских комнат.</br>
+                    Ассортимент насчитвает десятки наименований и постоянно пополняется: стенки, тумбы,комоды, шкафы-купе, столы, встроенные шкафы и полки и многое другое.</h3>
+                </div>
+            </div>
         </div>
     </div>
-</footer>
+</section>
 
+<section id="main_form">
+    <div class="container">
+        <div class="row main_form">
+            <div class="col-lg-3 offset-4 text-center">
+                <div class="container_mini">
+                        <select class="container_menu">
+                        <option value="" disabled selected>Выберите тип помещения</option>
+                        <option value="1">Спальня</option>
+                        <option value="2">Прихожая</option>
+                    </select><br>
+                </div>
+                <div class="container_mini">
+                        <select class="container_menu">
+                        <option value="" disabled selected>Выберите площадь помещения</option>
+                        <option value="1">10м2</option>
+                        <option value="2">15м2</option>
+                    </select><br>
+                </div>
+                <div class="container_mini">
+                        <select class="container_menu">
+                        <option value="" disabled selected>Выберите материал</option>
+                        <option value="1">ЛДСП</option>
+                        <option value="2">МДФ Эмаль</option>
+                    </select><br>
+                </div>
+                <div class="container_mini">
+                        <select class="container_menu">
+                        <option value="" disabled selected>Выберите изделие</option>
+                        <option value="1">Тумба</option>
+                        <option value="2">Шкаф</option>
+                    </select><br>
+                </div>
+                <div class="container_mini">
+                        <input type="text" name="" class="container_phone" placeholder="Введите Ваш номер телефона" value=""><br>
+                </div>
+                <div class="container_mini">
+                    <input class="button_style" type="button" value="Отправить">
+                </div>
+            </div>
+            <div class="col-lg-3 offset-1">
+                <div class="container_mini">
+                    <textarea class="container_comments" placeholder="Ваш комментарий" value=""></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="promo_us">
+    <div class="container">
+        <div class="row promo_us_block">
+            <div class="col-lg-8 offset-4 text-center">
+                <div class="promo_block">
+                    <h2 class="promo_text">Немного о нас</h2>
+                    <div class="promo_photo"></div>
+                        <h3 class="main_text">
+                            Мы с радостью возьмёмся за воплощение в жизнь Ваших идей. Во избежание недомолвок, все разработки тщательно прорабатываются до малейших деталей как от руки, так и при помощи компьютерной графики. Заказчику предоставляется 3D модель заказа, и при полном соответствии с заявленными требованиями подписывается договор.<br><br>
+                            За период пребывания на рынке мы наработали внушительную клиентскую базу и
+                            зарекомендовали себя как ответственного исполнителя. Качественный сервис,широкий ассортимент, гибкие цены, всё это позволяет бытьконкурентоспособными в независимости от времени.<br><br>
+                            Для того чтобы оформить заказ, Вы можете оставить онлайн заявку на сайте или
+                            же позвонить по указанным номерам телефона. В кратчайшие сроки менеджерсвяжется с Вами и обсудит все интересующие детали.
+                        </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="guarantee">
+    <div class="container">
+        <div class="row guarantee_block">
+            <div class="col-lg-8 offset-4 text-center">
+                <div class="promo_block">
+                    <h2 class="promo_text">Мы гарантируем</h2>
+                    <h3 class="main_text">
+                        <ul class="text-left">
+                            <li class="point"><p>Все заказы выполняются в срок, не превышающий 21 рабочих дней;</p></li>
+                            <li class="point"><p>Исползование только экологически чистых, изностойких материалов;</p></li>
+                            <li class="point"><p>Работа осуществляется грамотно, аккуратно, с соблюдением технологий;</p></li>
+                            <li class="point"><p>Нестадартные решения, уникальный подход к испольнению Вашего заказа;</p></li>
+                            <li class="point"><p>Доставку, установку по указанному адресу;</p></li>
+                            <li class="point"><p>Широкий ассортимент предлагаемой продукции;</p></li>
+                            <li class="point"><p>Гарантию долговечности готового изделия;</p></li>
+                            <li class="point"><p>Лояльную ценовую политику.</p></li>
+                        </ul>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="jobs_us">
+    <div class="container">
+        <div class="row jobs_us_block">
+            <div class="col-lg-8 offset-4 text-center">
+                <div class="promo_block">
+                    <h2 class="promo_text">Наши работы</h2>
+                    <div class="promo_photo"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="main_feedback">
+    <div class="container">
+        <div class="row feedback_block">
+            <div class="col-lg-8 offset-4 text-center">
+                <div class="promo_block">
+                    <h2 class="promo_text">Отзывы</h2>
+                    <div class="container_feedback">
+                        <div class="cd-testimonials-wrapper cd-container">
+                            <ul class="cd-testimonials">
+                                <li>
+                                    <p>Спасибо за высокий профессионализм в создании сайта загородного клуба «Атмосфера». Первый сайта клуба был неудачный и откровенно слабый. Деньги были потрачены зря. По совету друзей обратился к Сергею. Остался доволен его работой. Достаточно недорого за такой уровень сайта и очень быстро. Что хочу отметить особо - внимание Сергея к мелочам. Наши клиенты, так же, высоко оценили наш сайт. Спасибо, Сергей!</p>
+                                    <div class="cd-author">
+                                        <img src="images/avatar-1.jpg" alt="Author image">
+                                        <ul class="cd-author-info">
+                                            <li>Баринов Игорь</li>
+                                            <li>Руководитель загородного клуба <a href="http://atmosfera64.ru" target="_blank">«Атмосфера»</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Studio Design является партнером компании Sprinthost с 2011 года. За время сотрудничества мы убедились, что Сергей по-настоящему заботится о сайтах клиентов Studio Design, размещенных на нашем хостинге, и всегда прикладывает максимум усилий, чтобы справиться с любыми сложностями, возникающими в процессе сопровождения сайтов. Мы благодарны Сергею за активное взаимодействие с нашей командой, за внимательное отношение к нашим рекомендациям, и очень рады, что Сергей остается нашим партнером на протяжении такого значительного срока. Уверена, сотрудничество между нашими компаниями будет активно развиваться, оставаясь таким же позитивным, как и сейчас.</p>
+                                    <div class="cd-author">
+                                        <img src="images/avatar-2.jpg" alt="Author image">
+                                        <ul class="cd-author-info">
+                                            <li>Пугач Галина</li>
+                                            <li>Менеджер по маркетингу ООО <a href="http://sprinthost.ru" target="_blank">«Спринтхост»</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Оперативно и внимательно Сергей подходит к решению любых вопросов касательно функционирования сайта. Лаконичность сайта и легкость в использовании позволяют работать с ним в удовольствие! А результат всегда радует. Спасибо за отличную работу!</p>
+                                    <div class="cd-author">
+                                        <img src="images/avatar-3.jpg" alt="Author image">
+                                        <ul class="cd-author-info">
+                                            <li>Анастасия Финогенова</li>
+                                            <li>Модератор сайта агентства маркетинговых коммуникаций <a href="http://http://btl64.ru/" target="_blank">«Ромашка»</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Долго не решались делать собственный сайт, но Сергей убедил нас в необходимости этого шага. А самое главное, он сумел почувствовать специфику нашей компании и передать это в дизайне и организации сайта. Сайт Усадьбы "Сказка" родился сказочно быстро! Мы продолжаем сотрудничество и в настоящее время. Команда студии "Studio Design" умеет работать оперативно, творчески, мыслит позитивно и всегда идет в ногу со временем. Доверяя администрирование сайта студии, мы знаем, что всегда можем рассчитывать не только на техническую поддержку и оптимизацию, но и на то, что все новинки, появляющиеся  на просторах Интернета в области сайтостроения, обязательно воплотятся и в нашем совместном проекте.  Пусть будет больше проектов хороших и разных! Удачи!</p>              
+                                    <div class="cd-author">
+                                            <img src="images/avatar-11.jpg" alt="Author image">
+                                            <ul class="cd-author-info">
+                                                <li>Галина Киричек</li>
+                                                <li>администратор Усадьбы  <a href="http://volga-skazka.ru" target="_blank">«Сказка»</a></li>
+                                            </ul>
+                                    </div> <!-- cd-author -->
+                                </li>
+                                
+                            </ul> <!-- cd-testimonials -->
+
+                            <a href="#0" class="cd-see-all">Читать все</a>
+                        </div> <!-- cd-testimonials-wrapper -->
+
+                        <div class="cd-testimonials-all">
+                            <div class="cd-testimonials-all-wrapper">
+                                <ul>
+                                    <li class="cd-testimonials-item">
+                                        <p>Спасибо за высокий профессионализм в создании сайта загородного клуба «Атмосфера». Первый сайта клуба был неудачный и откровенно слабый. Деньги были потрачены зря. По совету друзей обратился к Сергею. Остался доволен его работой. Достаточно недорого за такой уровень сайта и очень быстро. Что хочу отметить особо - внимание Сергея к мелочам. Наши клиенты, так же, высоко оценили наш сайт. Спасибо, Сергей!</p>
+                                        <div class="cd-author">
+                                            <img src="images/avatar-1.jpg" alt="Author image">
+                                            <ul class="cd-author-info">
+                                                <li>Баринов Игорь</li>
+                                                <li>Руководитель загородного клуба <a href="http://atmosfera64.ru" target="_blank">«Атмосфера»</a></li>
+                                            </ul>
+                                        </div> <!-- cd-author -->
+                                    </li>
+                                    <li class="cd-testimonials-item">
+                                        <p>Studio Design является партнером компании Sprinthost с 2011 года. За время сотрудничества мы убедились, что Сергей по-настоящему заботится о сайтах клиентов Studio Design, размещенных на нашем хостинге, и всегда прикладывает максимум усилий, чтобы справиться с любыми сложностями, возникающими в процессе сопровождения сайтов. Мы благодарны Сергею за активное взаимодействие с нашей командой, за внимательное отношение к нашим рекомендациям, и очень рады, что Сергей остается нашим партнером на протяжении такого значительного срока. Уверена, сотрудничество между нашими компаниями будет активно развиваться, оставаясь таким же позитивным, как и сейчас.</p>
+                                        
+                                        <div class="cd-author">
+                                            <img src="images/avatar-2.jpg" alt="Author image">
+                                            <ul class="cd-author-info">
+                                                <li>Пугач Галина</li>
+                                                <li>Менеджер по маркетингу ООО <a href="http://sprinthost.ru" target="_blank">«Спринтхост»</a></li>
+                                            </ul>
+                                        </div> <!-- cd-author -->
+                                    </li>
+                                    <li class="cd-testimonials-item">
+                                        <p>Оперативно и внимательно Сергей подходит к решению любых вопросов касательно функционирования сайта. Лаконичность сайта и легкость в использовании позволяют работать с ним в удовольствие! А результат всегда радует. Спасибо за отличную работу!</p>
+                                        
+                                        <div class="cd-author">
+                                            <img src="images/avatar-3.jpg" alt="Author image">
+                                            <ul class="cd-author-info">
+                                                <li>Анастасия Финогенова</li>
+                                                <li>Модератор сайта агентства маркетинговых коммуникаций <a href="http://http://btl64.ru/" target="_blank">«Ромашка»</a></li>
+                                            </ul>
+                                        </div> <!-- cd-author -->
+                                    </li>
+                                    <li class="cd-testimonials-item">
+                                        <p>Знаем Сергея, владельца компании «Studio Design» уже очень давно, с каждым новым сайтом их работы нравились все больше и больше! Когда возникла необходимость сделать сайт, перед нами даже не стоял вопрос, кому доверится! Спасибо «Studio Design» за нестандартные идеи, дизайн, скорость и качество выполнения работ! В ближайшее время мы запускаем еще 2 направления, одно из которых интернет магазин и конечно их будет делать только Сергей! Спасибо! Успехов и развития!</p>
+                                        
+                                        <div class="cd-author">
+                                            <img src="images/avatar-4.jpg" alt="Author image">
+                                            <ul class="cd-author-info">
+                                                <li>Константин Николаенко</li>
+                                                <li>Руководитель проекта <a href="http://http://bizneslekar.ru/" target="_blank">«Бизнес-Лекарь»</a></li>
+                                            </ul>
+                                        </div> <!-- cd-author -->
+                                    </li>
+                                    <li class="cd-testimonials-item">
+                                        <p>Мы не долго думали кому доверить изготовление нашего сайта www.decor-love.ru, это уже второй сайт который мы заказали у этой компании. Считаем, что доверившись «Studio Design», мы не ошиблись: стильный дизайн, а самое главное на сегодняшний день - это адаптивность сайта под все мобильные устройства. Это значит о нас знают, аудитория наших клиентов значительно расширилась, так как основная масса клиентов сегодня пользуются планшетами и телефонами для поиска необходимой услуги. Спасибо! Успехов и процветания!</p>
+                                        
+                                        <div class="cd-author">
+                                            <img src="images/avatar-5.jpg" alt="Author image">
+                                            <ul class="cd-author-info">
+                                                <li>Лёвин Евгений</li>
+                                                <li>Технический директор  <a href="http://decor-love.ru" target="_blank">«Студия свадебного дизайна Love Decor»</a></li>
+                                            </ul>
+                                        </div> <!-- cd-author -->
+                                    </li>
+                                    <li class="cd-testimonials-item">
+                                        <p>Как приятно работать с думающими, ответственными людьми. Ощущение что ему больше надо чем нам. Когда пришла работать в новую компанию, о новом сайте были одни разговоры. Причем долгое время. При обращении к Сергею вопрос решился мгновенно. Причем ему важно прежде дело, без денег готов все сделать. Получилось. Нравится. Над недостатками работаем.Хороший инструмент продажи. В продвижении сайта нет предела совершенства. А? ЖДУ ПРЕДЛОЖЕНИЙ!</p>
+                                        
+                                        <div class="cd-author">
+                                            <img src="images/avatar-6.jpg" alt="Author image">
+                                            <ul class="cd-author-info">
+                                                <li>Азоркина Маргарита Николаевна</li>
+                                                <li>Генеральный директор Санаторий ООО <a href="http://sp-izumrud.ru" target="_blank">«Изумруд»</a></li>
+                                            </ul>
+                                        </div> <!-- cd-author -->
+                                    </li>
+                                    <li class="cd-testimonials-item">
+                                        <p>В наше время очень много компаний, которые занимаются разработкой сайтов, но толковых из них единицы. Недавно решили обновить свой сайт. Обратились к Сергею, о чем ни чуть не жалеем. Буквально за несколько дней был создан дизайн сайта, который координально отличался от предыдущего. Сайт стал современым, быстрым и простым в использовании. Страницы открываются достаточно быстро, навигация четкая и понятная для посетителей. Он приобрел индивидуальность. Хотим сказать огромное спасибо за проделанную работу. Сергей открыл для нас новый мир интернета. К разработке сайта он подошел со всей душой, окунулся в нее с головой. Если вам необходим отличный сайт, то обращайтесь к Сергею. Он точно сделаем из вашего сайта"конфетку"!</p>
+                                        
+                                        <div class="cd-author">
+                                            <img src="images/avatar-7.jpg" alt="Author image">
+                                            <ul class="cd-author-info">
+                                                <li>Зайцева Екатерина</li>
+                                                <li>Директор агентства маркетинговых коммуникаций <a href="http://btl64.ru" target="_blank">«Ромашка»</a></li>
+                                            </ul>
+                                        </div> <!-- cd-author -->
+                                    </li>
+                                    <li class="cd-testimonials-item">
+                                        <p>Решил для разработки сайта найти качественного исполнителя и не ошибся. Так как в прямом смысле все работы Сергея очень понравились, отдал и дизайн, и разработку структуры сайта, и раскрутку в его руки. Первый предложенный дизайн был стильный и привлекательный, но, после заполнения сайта большим количеством фото, стало не хватать ярких красок. Поэтому дизайн Сергей за несколько дней переделал в более цветное исполнение и показал как менять элементы дизайна своими силами. В целом заказ быстро и качественно сделан, дальнейшее заполнение сайта обновленной информацией происходит очень легко. С уважением отношусь к людям профессионально выполняющим поставленную задачу. Спасибо за хорошую работу и тех. поддержку.</p>
+                                        
+                                        <div class="cd-author">
+                                            <img src="images/avatar-8.jpg" alt="Author image">
+                                            <ul class="cd-author-info">
+                                                <li>Иванов Олег</li>
+                                                <li>Директор рекламного агентства <a href="http://www.kipras.info" target="_blank">«Кипрас»</a></li>
+                                            </ul>
+                                        </div> <!-- cd-author -->
+                                    </li>
+                                    <li class="cd-testimonials-item">
+                                        <p>Спасибо огромное администратору сайта <a style="color:#fff;" href="http://www.sp-izumrud.ru/otzyvy_klientov/morozova_anna/" target="_blank">"Изумруд"</a> Сергею за размещение на сайте наших с дочкой фотографий празднования Нового года! Хочется отметить грамотную и профессиональную работу Сергея. Современный, оригинальный, удобный сайт "Изумруда" позволяет нам - клиентам, с легкостью узнать информацию, которая нас интересует и полностью отвечает всем нашим запросам. Желаю Вам процветания и творческих успехов!!!</p>
+                                        
+                                        <div class="cd-author">
+                                            <img src="images/avatar-9.jpg" alt="Author image">
+                                            <ul class="cd-author-info">
+                                                <li>Анна Морозова</li>
+                                                <li>Инженер по промышленной безопасности ООО «Инженерные системы»</li>
+                                            </ul>
+                                        </div> <!-- cd-author -->
+                                    </li>
+                                    <li class="cd-testimonials-item">
+                                        <p>Портал «Православная Пермь» получился светлым, в небесных тонах Пресвятой Богородицы. Дизайн придумывался и обсуждался достаточно долго, но после принятия решения рождение сайта или, говоря техническим языком конструирование, было сделано очень быстро. UMI.CMS работает без сбоев, материалы и фотографии быстро появляются в поисковиках. Сергей никогда не отказывает в консультациях и помощи. Желаю Божией помощи во всех начинаниях.</p>
+                                        
+                                        <div class="cd-author">
+                                            <img src="images/avatar-10.jpg" alt="Author image">
+                                            <ul class="cd-author-info">
+                                                <li>Священник Вячеслав Зуев</li>
+                                                <li>Главный редактор газеты <a href="http://pravperm.ru" target="_blank">«Православная Пермь»</a></li>
+                                            </ul>
+                                        </div> <!-- cd-author -->
+                                    </li>
+                                    <li class="cd-testimonials-item">
+                                        <p>Долго не решались делать собственный сайт, но Сергей убедил нас в необходимости этого шага. А самое главное, он сумел почувствовать специфику нашей компании и передать это в дизайне и организации сайта. Сайт Усадьбы "Сказка" родился сказочно быстро! Мы продолжаем сотрудничество и в настоящее время. Команда студии "Studio Design" умеет работать оперативно, творчески, мыслит позитивно и всегда идет в ногу со временем. Доверяя администрирование сайта студии, мы знаем, что всегда можем рассчитывать не только на техническую поддержку и оптимизацию, но и на то, что все новинки, появляющиеся  на просторах Интернета в области сайтостроения, обязательно воплотятся и в нашем совместном проекте.  Пусть будет больше проектов хороших и разных! Удачи!</p>
+                                        
+                                        <div class="cd-author">
+                                            <img src="images/avatar-11.jpg" alt="Author image">
+                                            <ul class="cd-author-info">
+                                                <li>Галина Киричек</li>
+                                                <li>администратор Усадьбы  <a href="http://volga-skazka.ru" target="_blank">«Сказка»</a></li>
+                                            </ul>
+                                        </div> <!-- cd-author -->
+                                    </li>
+                                    <li class="cd-testimonials-item">
+                                        <p>Коллектив студи видео производства «Взгляд» благодарит «Studio Design» за качественную и быструю работу по изготовлению нашего сайта www.video64.ru . Сайт выполнен аккуратно и максимально удобно для наших клиентов. Надеемся на дальнейшее плодотворное двухстороннее сотрудничество наших фирм. Спасибо за профессионализм.</p>
+                                        
+                                        <div class="cd-author">
+                                            <img src="images/avatar-12.jpg" alt="Author image">
+                                            <ul class="cd-author-info">
+                                                <li>Андрей Мазуревский</li>
+                                                <li>Руководитель студии видео производства <a href="http://s-sd.ru/files/animated404/ru.htm" target="_blank">«Взгляд»</a></li>
+                                            </ul>
+                                        </div> <!-- cd-author -->
+                                    </li>
+                                </ul>
+                            </div>  <!-- cd-testimonials-all-wrapper -->
+
+                            <a href="#0" class="close-btn">Close</a>
+                        </div> <!-- cd-testimonials-all -->
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="main_social_network">
+    <div class="container">
+        <div class="row social_netwiork_block">
+            <div class="col-lg-6 offset-5 text-center">
+                <div class="promo_block">
+                    <h2 class="promo_text">Мы в социальных сетях</h2>
+                    <div class="social_item">
+                        <a href="https://vk.com/polno_mebeli" title="Перейти к нам в интернет-магазин ВКонтакте" target="_blank">
+                            <img class="social_icon" src="images/vk.png"></a>
+                        <a href="https://www.instagram.com/zel_mebel/" title="Перейти к нам в Instagram" target="_blank">
+                            <img class="social_icon" src="images/ig.png"></a>
+                        <a href="https://t.me/zelmebel89" title="Перейти в наш Telegram чат" target="_blank">
+                            <img class="social_icon" src="images/tg.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="scripts/jquery-2.1.1.js"></script>
+<script src="scripts/masonry.pkgd.min.js"></script>
+<script src="scripts/jquery.flexslider-min.js"></script>
+<script src="scripts/main.js"></script> <!-- Resource jQuery -->
+<script src="scripts/modernizr.js"></script> <!-- Modernizr -->
 <script src="scripts/jquery.js"></script>
 <script src="scripts/slides.js"></script>
-<script src="scripts/custom.js"></script>
-<script src="libs/jquery/jquery-2.1.3.min.js"></script>
-<script src="libs/owl-carousel/owl.carousel.min.js"></script>
 </body>
 </html>
