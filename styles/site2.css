@@ -32,7 +32,9 @@
 
 /* -------------------- Шрифты, конец --------------------- */
 
+/* -------------------- Шапка, начало --------------------- */
 
+/* Стиль для шапки */
 #main {
     background-color: #f5f5f5;
     width: 100%;
@@ -44,6 +46,7 @@
     padding: 1em 0;
 }
 
+/* Стилья для логотипа в шапке */
 .main_logo_border {
     width: 400px;
     height: 130px;
@@ -53,10 +56,7 @@
     line-height: 30px;
 }
 
-.text-left li {
-    color: #FF4500;
-}
-
+/* Стиль теней логотипа */
 .logo_style, h6 {
     color: white; 
     text-shadow: 0 1px 0 #ccc, 
@@ -73,11 +73,49 @@
               0 20px 20px rgba(0,0,0,.15);
 }
 
-.logo_style {
-    font-size: 3em;
+/* -------------------- Шапка, конец --------------------- */
 
+/* -------------------- Стили текста, начало --------------------- */
+
+/* Стиль текста для заголовков */
+.promo_text {
+    color: #000;
+    padding: 1em;
+    margin: auto;
+    font-family: "Exo", sans-serif;
+    font-size: 2em;
+    word-spacing: 8px;
 }
 
+/* Стилья текста в первом заголовке, "Скидка 10%" */
+.sale_text {
+    font-family: "Exo", sans-serif;
+    color: red;
+    font-size: 1em;
+}
+
+/* Стиль текста внутри заголовков */
+.main_text {
+    color: #808080;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+/* Стиль текста в разделе "Мы гарантируем" */
+.text-left {
+    padding-left: 5em; 
+}
+
+.text-left li {
+    color: #FF4500;
+}
+
+/* Размер шрифта логотипа*/
+.logo_style {
+    font-size: 3em;
+}
+
+/* Стиль для "Зел" в логотипе */
 span {
     font-family: "Roboto";
     font-size: 1em;
@@ -85,6 +123,7 @@ span {
     color: #FF4500;
 }
 
+/* Стиль текста */
 p {
     font-size: 1.2em;
     color: #808080;
@@ -102,6 +141,8 @@ h6 {
     font-size: 1.5em;
 }
 
+/* -------------------- Стили текста, конец --------------------- */
+
 /* -------------------- Меню, начало --------------------- */
 
 .topmenu > li {
@@ -110,9 +151,9 @@ h6 {
   
 .topmenu > li > a {
     position: relative;
-    padding: 1em 1.5em;
+    padding: 1em 1em;
     font-family: "Open Sans", cursive;
-    font-size: 1.5em;
+    font-size: 1.35em;
     line-height: 1;
     letter-spacing: 0.5px;
 }
@@ -148,9 +189,9 @@ h6 {
     z-index: 4;
     display:inherit;
     top: 100%;
-    width: 15.62em;
+    width: 25%;
     padding: 1em;
-    margin-top: -1em;
+    margin-top: -0.7em;
     background: white;
     border-radius: 1em;
     box-shadow: 0 0 2em;
@@ -168,7 +209,7 @@ h6 {
 }
 
 .submenu a {
-    font-size: 1em;
+    font-size: 1.2em;
     padding: 0.5em;
     transition: .5s linear;
 }
@@ -200,210 +241,133 @@ nav a {
 
 /* -------------------- Слайдер, начало --------------------- */
 
-.slide-show {
-    height: 600px;
-    background: grey;
-}
-/* Слайдер */
-.slides {
-    height: 350px;
-    width: 1000px;
-    margin: auto;
-    padding: 2em;
-    position: relative;
-    border-radius: 1em;
-}
-.slides ul {
-    list-style:none;
-    position:relative;
-}
-
-/* Кадры анимации #anim_slides */
-@-webkit-keyframes anim_slides {
-    0% {
-        opacity:0;
-    }
-    6% {
-        opacity:1;
-    }
-    24% {
-        opacity:1;
-    }
-    30% {
-        opacity:0;
-    }
-    100% {
-        opacity:0;
-    }
-}
-@-moz-keyframes anim_slides {
-    0% {
-        opacity:0;
-    }
-    6% {
-        opacity:1;
-    }
-    24% {
-        opacity:1;
-    }
-    30% {
-        opacity:0;
-    }
-    100% {
-        opacity:0;
-    }
-}
-
-.slides ul li {
-    opacity:0;
-    position:absolute;
-    top:0;
-
-    /* анимация css3 */
-    -webkit-animation-name: anim_slides;
-    -webkit-animation-duration: 24.0s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: normal;
-    -webkit-animation-delay: 0;
-    -webkit-animation-play-state: running;
-    -webkit-animation-fill-mode: forwards;
-
-    -moz-animation-name: anim_slides;
-    -moz-animation-duration: 24.0s;
-    -moz-animation-timing-function: linear;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-direction: normal;
-    -moz-animation-delay: 0;
-    -moz-animation-play-state: running;
-    -moz-animation-fill-mode: forwards;
-}
-
-/* Задержки css3 */
-.slides ul  li:nth-child(2), .slides ul  li:nth-child(2) div {
-    -webkit-animation-delay: 6.0s;
-    -moz-animation-delay: 6.0s;
-}
-.slides ul  li:nth-child(3), .slides ul  li:nth-child(3) div {
-    -webkit-animation-delay: 12.0s;
-    -moz-animation-delay: 12.0s;
-}
-.slides ul  li:nth-child(4), .slides ul  li:nth-child(4) div {
-    -webkit-animation-delay: 18.0s;
-    -moz-animation-delay: 18.0s;
-}
-.slides ul li img {
-    display:block;
-}
-
-/* Кадры анимации #anim_titles */
-@-webkit-keyframes anim_titles {
-    0% {
-        left:100%;
-        opacity:0;
-    }
-    5% {
-        left:10%;
-        opacity:1;
-    }
-    20% {
-        left:10%;
-        opacity:1;
-    }
-    25% {
-        left:100%;
-        opacity:0;
-    }
-    100% {
-        left:100%;
-        opacity:0;
-    }
-}
-@-moz-keyframes anim_titles {
-    0% {
-        left:100%;
-        opacity:0;
-    }
-    5% {
-        left:10%;
-        opacity:1;
-    }
-    20% {
-        left:10%;
-        opacity:1;
-    }
-    25% {
-        left:100%;
-        opacity:0;
-    }
-    100% {
-        left:100%;
-        opacity:0;
-    }
-}
-
-.slides ul li div {
-    background-color:#000000;
-    border-radius:10px 10px 10px 10px;
-    box-shadow:0 0 5px #FFFFFF inset;
-    color:#FFFFFF;
-    font-size:26px;
-    left:10%;
-    margin:0 auto;
-    padding:20px;
-    position:absolute;
-    top:50%;
-    width:200px;
-
-    /* Анимация css3 */
-    -webkit-animation-name: anim_titles;
-    -webkit-animation-duration: 24.0s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: normal;
-    -webkit-animation-delay: 0;
-    -webkit-animation-play-state: running;
-    -webkit-animation-fill-mode: forwards;
-
-    -moz-animation-name: anim_titles;
-    -moz-animation-duration: 24.0s;
-    -moz-animation-timing-function: linear;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-direction: normal;
-    -moz-animation-delay: 0;
-    -moz-animation-play-state: running;
-    -moz-animation-fill-mode: forwards;
+.slide_show {
+    margin-top: 2em;
+    padding: 0.5em;
+    border-radius: 2em;
+    box-shadow: 0 0 2em;
 }
 
 /* -------------------- Слайдер, конец --------------------- */
 
-.promo_text {
-    color: #000;
-    padding: 1em;
-    margin: auto;
-    font-family: "Exo", sans-serif;
-    font-size: 2em;
-    word-spacing: 8px;
+/* -------------------- Преимущества, начало --------------------- */
+ 
+/* Блок 1 - начальные свойства */ 
+.box_1, .box_2, .box_3, .box_4, .box_5, .box_6 {
+    position: relative;
+    transition: all .5s ease-in-out .0s;
+    width: 50%;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0.5em;
+    margin-top: 1em;
+    border-radius: 1em;
+    box-shadow: 0 0 0.2em;
+    background: #f5f5f5;
+}
+ 
+/* Блок - конечные свойства для анимации при наведении */
+.box_1:hover, .box_2:hover, .box_3:hover, .box_4:hover, .box_5:hover, .box_6:hover {
+    height: 130px;
+    border-radius: 2em;
+    box-shadow: 0 0 1em;
+    width: 90%;
+    background: #fff;
 }
 
-.sale_text {
-    font-family: "Exo", sans-serif;
-    color: red;
-    font-size: 1em;
+/* Внимание! Здесь при наведении на первый блок изменяется он, а также второй блок трансформируется */
+
+/*
+.box_1:hover + .box_2 {
+}
+*/
+
+/* Появление текста описания */
+.left_menu_block .box_1:hover .left_submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+.left_menu_block .box_2:hover .left_submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+.left_menu_block .box_3:hover .left_submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+.left_menu_block .box_4:hover .left_submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+.left_menu_block .box_5:hover .left_submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+.left_menu_block .box_6:hover .left_submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
 }
 
-.main_text {
-    color: #808080;
+/* Основой блок */
+.left_menu_block {
+    position: relative;
+    height: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.left_menu {
+    width: 90%;
+}
+
+/* Стиль для имени преимущества */
+.left_down {
+    font-family: "Open Sans", cursive;
     font-size: 1.2em;
-    line-height: 1.5em;
+    color: #f5f5f5;
+    width: 90%;
+    margin: 0 auto;
 }
 
-.text-left {
-    padding-left: 5em; 
+.left_menu nav ul li {
+    width: 100%;
+    position: relative;
+    color: #808080;
 }
 
+/* Стиль для блока с текстом описания */
+.left_submenu {
+    z-index: 4;
+    position: absolute;
+    left: 50%;
+    top: 155%;
+    width: 90%;
+    padding: 1em;
+    margin-top: -0.7em;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-100%);
+    transition: .5s;
+}
 
-option {
+/* Место между основным блоком и блоком преимуществ*/
+.left_menu nav {
+    text-align: center;
+    padding: 0.5em 0 0;
+}
+
+/* -------------------- Преимущества, конец --------------------- */
+
+/* -------------------- Форма, начало --------------------- */
+
+.option_style {
     width: 360px;
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
@@ -475,6 +439,7 @@ option {
     box-shadow: 0 0 0.1em;
 }
 
+/* -------------------- Форма, конец --------------------- */
 
 .promo_block {
     margin-top: 2em;
@@ -493,8 +458,24 @@ option {
     margin: 0 auto;
 }
 
+
+/* -------------------- Подвал, начало --------------------- */
+
+#main_footer {
+    height: 28em;
+    background-color: #f5f5f5;
+    width: 100%;
+    min-height: 200px;
+    box-shadow: 0 0 5px;
+}
+
+.footer_menu_block {
+    margin-top: -2em;
+}
+
+
 .social_item {
-    margin: 2em;
+    margin: 1em;
     justify-content: center;
     flex-direction: row;
     display: flex;
@@ -511,29 +492,78 @@ option {
     transform: scale(1.5, 1.5);
 }
 
-.contactWrap {
-    width: 25em;
-    line-height: 2em;
-    margin-bottom: 0.7em;
-    line-height: 2em;
+.contact_wrap {
+    margin-bottom: 2em;
+    margin-top: 1.5em;
+    text-align: left;
 }
 
-.contactWrap:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.contactIcon {
+.contact_icon {
+    display: inline-block;
     width: 3em;
     height: 3em;
     margin-right: 1em;
 }
 
+.contact_text {
+    font-size: 1.2em;
+    margin-left: 1.8em;
+    color: #808080;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
 #copyrights {
+    margin-top: 1em;
     text-align: center;
 }
 
-#contacts {
-    margin: 1em;
-    left: 3em;
+.footer_promo_text {
+    padding: 1.1em 0;
+    margin: auto;
+    color: #000;
+    font-family: "Exo", sans-serif;
+    font-size: 2em;
+    text-align: left;
 }
+
+.footer_menu > li {
+    display: block;
+    text-align: left;
+}
+
+.footer_menu > li > a {
+    position: relative;
+    padding: 0.4em 0.4em;
+    font-family: "Open Sans", cursive;
+    font-size: 1.2em;
+    line-height: 1;
+    letter-spacing: 0.1px;
+}
+  
+.footer_menu > li > a:before {
+    content: " ";
+    position: absolute;
+    z-index: 10;
+    left: -2%;
+    top: 11px;
+    width: 0.5em;
+    height: 0.5em;
+    background: black;
+    border-radius: 50%;
+    transform: translate(-50%, 20px);
+    opacity: 0;
+    transition: .3s;
+}
+
+.footer_menu a:hover {
+    color: #000;
+    text-decoration: underline;
+    cursor: pointer;
+}
+  
+.footer_menu li:hover a:before {
+    transform: translate(-50%, 0);
+    opacity: 1;
+}
+/* -------------------- Подвал, конец --------------------- */
