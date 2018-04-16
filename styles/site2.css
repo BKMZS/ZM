@@ -83,7 +83,7 @@
     padding: 1em;
     margin: auto;
     font-family: "Exo", sans-serif;
-    font-size: 2em;
+    font-size: 1.7em;
     word-spacing: 8px;
 }
 
@@ -103,7 +103,8 @@
 
 /* Стиль текста в разделе "Мы гарантируем" */
 .text-left {
-    padding-left: 5em; 
+    margin: 0 auto;
+    width: 57%;
 }
 
 .text-left li {
@@ -255,8 +256,9 @@ nav a {
 /* Блок 1 - начальные свойства */ 
 .box_1, .box_2, .box_3, .box_4, .box_5, .box_6 {
     position: relative;
+    display: inherit;
     transition: all .5s ease-in-out .0s;
-    width: 50%;
+    width: 80%;
     height: 40px;
     margin: 0 auto;
     padding: 0.5em;
@@ -268,7 +270,7 @@ nav a {
  
 /* Блок - конечные свойства для анимации при наведении */
 .box_1:hover, .box_2:hover, .box_3:hover, .box_4:hover, .box_5:hover, .box_6:hover {
-    height: 130px;
+    height: 165px;
     border-radius: 2em;
     box-shadow: 0 0 1em;
     width: 90%;
@@ -283,39 +285,39 @@ nav a {
 */
 
 /* Появление текста описания */
-.left_menu_block .box_1:hover .left_submenu {
+.left_menu .box_1:hover .left_submenu {
     visibility: visible;
     opacity: 1;
     transform: translate(-50%, 0);
 }
-.left_menu_block .box_2:hover .left_submenu {
+.left_menu .box_2:hover .left_submenu {
     visibility: visible;
     opacity: 1;
     transform: translate(-50%, 0);
 }
-.left_menu_block .box_3:hover .left_submenu {
+.left_menu .box_3:hover .left_submenu {
     visibility: visible;
     opacity: 1;
     transform: translate(-50%, 0);
 }
-.left_menu_block .box_4:hover .left_submenu {
+.left_menu .box_4:hover .left_submenu {
     visibility: visible;
     opacity: 1;
     transform: translate(-50%, 0);
 }
-.left_menu_block .box_5:hover .left_submenu {
+.left_menu .box_5:hover .left_submenu {
     visibility: visible;
     opacity: 1;
     transform: translate(-50%, 0);
 }
-.left_menu_block .box_6:hover .left_submenu {
+.left_menu .box_6:hover .left_submenu {
     visibility: visible;
     opacity: 1;
     transform: translate(-50%, 0);
 }
 
 /* Основой блок */
-.left_menu_block {
+.left_menu {
     position: relative;
     height: 1em;
     padding-top: 1em;
@@ -323,8 +325,8 @@ nav a {
 }
 
 .left_menu {
-    width: 90%;
-    min-width: 340px;
+    height: 100%;
+    width: 100%;
 }
 
 /* Стиль для имени преимущества */
@@ -332,7 +334,7 @@ nav a {
     font-family: "Open Sans", cursive;
     font-size: 1.2em;
     color: #f5f5f5;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -347,8 +349,8 @@ nav a {
     z-index: 4;
     position: absolute;
     left: 50%;
-    top: 155%;
-    width: 90%;
+    top: 120%;
+    width: 100%;
     padding: 1em;
     margin-top: -0.7em;
     display: block;
@@ -368,6 +370,10 @@ nav a {
 
 /* -------------------- Форма, начало --------------------- */
 
+.form_block {
+    margin-top: 2em;
+}
+
 .option_style {
     width: 320px;
     font-family: "Open Sans", sans-serif;
@@ -379,22 +385,25 @@ nav a {
     border-radius: 1em;
 }
 
-.container_menu, .button_style {
-    width: 320px;
+.container_menu, .button_style, .container_phone, .container_comments {
+    width: 90%;
     font-family: "Open Sans", sans-serif;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #808080;
-    display: inline-block;
     padding: 1em;
-    margin-top: 1em;
-    border-radius: 1em;
     box-shadow: 0 0 0.1em;
+    border-radius: 1em;
+    margin-top: 0.5em;
     background: #f5f5f5;
+}
+
+.container_menu, .button_style {
+    display: inline-block;
 }
 
 .container_menu:hover, .container_comments:hover, .container_phone:hover, .button_style:hover {
     background: #fff;
-    box-shadow: 0 0 0.5em;
+    box-shadow: 0 0 0.7em;
 }
 
 .container_menu:focus, .container_comments:focus, .container_phone:focus, .button_style, option {
@@ -404,40 +413,27 @@ nav a {
 }
 
 .container_mini {
+    padding: 10em;
     font-size: 1em;
     padding: 0.2em;
 }
 
 .container_mini:before {
     border-radius: 1em;
+    position: relative;
 }
 
 .container_phone {
-    width: 320px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.2em;
     text-align: left;
-    color: #808080;
-    background: #f5f5f5;
+    margin-bottom: 0.5em;
     display: inline-block;
-    padding: 1.1em;
-    margin-top: 1em;
     border: 1px solid;
-    border-radius: 1em;
-    box-shadow: 0 0 0.1em;
 }
 
 .container_comments {
-    background: #f5f5f5;
-    width: 320px;
-    height: 395px;
+    height: 330px;
     text-align: left;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.2em;
-    margin-top: 1em;
-    padding: 1.1em;
-    border-radius: 1em;
-    box-shadow: 0 0 0.1em;
+    margin-bottom: 0.5em;    
 }
 
 /* -------------------- Форма, конец --------------------- */
@@ -448,8 +444,8 @@ nav a {
 
 .promo_photo {
     margin: 2em auto;
-    min-width: 340px;
-    min-height: 400px;
+    width: 100%;
+    height: 400px;
     background: url('../images/photoUs.jpg');
     box-shadow: 0 0 1em;
     border-radius: 1em;
