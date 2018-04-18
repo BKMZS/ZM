@@ -6,6 +6,7 @@
     <link href="styles/feedback_style.css" rel="stylesheet"> <!-- Resource style -->
     <link href="styles/bootstrap.min.css" rel="stylesheet">
     <link href="styles/site2.css" rel="stylesheet">
+    <link href="styles/animate.css" rel="stylesheet">
     <title>Мебель на заказ в  Зеленограде</title>
 </head>
 <body>
@@ -23,8 +24,8 @@
                 <div class="col-md-12 text-center">
                     <nav>
                         <ul class="topmenu">
-                            <li> <a href="">Главная</a></li>
-                            <li> <a href="" class="down">Наши работы</a>
+                            <li> <a class="menu_active wow zoomIn" href="index.html">Главная</a></li>
+                            <li> <a href="templates/our-jobs.html" class="down">Наши работы</a>
                                 <ul class="submenu">
                                     <li><a href="">Мебель в ванную</a></li>
                                     <li><a href="">Мебель в гостиную и ТВ зоны</a></li>
@@ -35,9 +36,8 @@
                                     <li><a href="">Шкафы и шкафы-купе</a></li>
                                 </ul>
                             </li>
-                            <li><a href="">Контакты</a></li>
-                            <li><a href="">Сотрудничество</a></li>
-                            <li> <a href="" class="down">Блог</a>
+                            <li><a href="templates/cooperation.html">Сотрудничество</a></li>
+                            <li> <a href="templates/blog.html" class="down">Блог</a>
                                 <ul class="submenu">
                                     <li><a href="">Искусственный камень для столешниц и раковин</a></li>
                                     <li><a href="">Мебель с загруглёнными углами</a></li>
@@ -45,8 +45,9 @@
                                     <li><a href="">Маленький коридор - делаем из минусоы плюсы</a></li>   
                                 </ul>
                             </li>
-                            <li><a href="">Как сделать заказ</a></li>
-                            <li><a href="">Наши контакты</a></li>
+                            <li><a href="templates/how-to-make-an-order.html">Как сделать заказ</a></li>
+                            <li><a href="templates/our-contact.html">Наши контакты</a></li>
+                            <li><a href="templates/comment.html">Отзывы</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -70,39 +71,36 @@
         <div class="row promo_info">
             <div class="col-xs-12 col-sm-6 col-md-4 text-center">
                 <div class="promo_block">
-                    <h2 class="promo_text">А вы знали?</h2>
-                </div>
-                <div class="promo_block">
                     <div class="left_menu">
                         <h2 class="promo_text">Наши преимущества</h2>
                         <nav>
                             <ul>
-                                <div class="box_1">
+                                <div class="box_1 wow fadeInLeft" data-wow-delay=".1s">
                                     <li> <a class="left_down">Эксклюзивность</a>
                                         <ul class="left_submenu">Возможность получить эксклюзивный вариант мебели;</ul>
                                     </li><br>
                                 </div>
-                                <div class="box_2">
+                                <div class="box_2 wow fadeInLeft" data-wow-delay=".3s">
                                     <li> <a class="left_down">Точность</a>
                                         <ul class="left_submenu">Спроектированная конструкция будет идеально вписываться под определенное место в помещении;</ul>
                                     </li><br>
                                 </div>
-                                <div class="box_3">
+                                <div class="box_3 wow fadeInLeft" data-wow-delay=".5s">
                                     <li> <a class="left_down">Качество</a>
                                         <ul class="left_submenu">Качество такой мебели значительно выше той, которая продается уже в готовом виде;</ul>
                                     </li><br>
                                 </div>
-                                <div class="box_4">
+                                <div class="box_4 wow fadeInLeft" data-wow-delay=".7s">
                                     <li> <a class="left_down">Дизайн</a>
                                         <ul class="left_submenu">Возможность выбора материала, из которого будет изготавливаться, дизайна, цветовой гаммы, фурнитуры;</ul>
                                     </li><br>
                                 </div>
-                                <div class="box_5">
+                                <div class="box_5 wow fadeInLeft" data-wow-delay=".9s">
                                     <li> <a class="left_down">Функциоальнoсть</a>
                                         <ul class="left_submenu">Необходимое количество полок, секций, ящиков, выдвижных элементов исходя из ваших пожеланий;</ul>
                                     </li><br>
                                 </div>
-                                <div class="box_6">
+                                <div class="box_6 wow fadeInLeft" data-wow-delay="1.1s">
                                     <li> <a class="left_down">Открытые двери</a>
                                         <ul class="left_submenu">Возможность контролировать качество проделанных работ;</ul>
                                     </li><br>
@@ -111,17 +109,31 @@
                         </nav>
                     </div>
                 </div>
+                <div class="promo_block">
+                    <h2 class="promo_text">Наши работы</h2>
+                    <nav>
+                        <ul class="all_left_menu">
+                            <li><a href="">Мебель в ванную</a></li>
+                            <li><a href="">Мебель в гостиную</a></li>
+                            <li><a href="">Мебель в детскую</a></li>
+                            <li><a href="">Полки и стеллажи</a></li>
+                            <li><a href="">Прихожие</a></li>
+                            <li><a href="">Тумбы</a></li>
+                            <li><a href="">Шкафы</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-8 text-center">
                 <div class="promo_block">
-                    <h2 class="promo_text">Заполните поля и получите <span class="sale_text">cкидку 10%</span><br> на первый заказ!</h2>
+                    <h2 class="promo_text wow tada" data-wow-delay="2s">Заполните поля и получите <span class="sale_text">cкидку 10%</span><br> на первый заказ!</h2>
                     <h3 class="main_text">Спектр изготавливаемых изделий разнообразен и не ограничивается однотипным подходом. На сегодняшний день мы предлагаем изготовление различных видео мебели для гостиной, спален, ванных комнат, шкафов для прихожих и коридоров, а также детских комнат.</br>
                     Ассортимент насчитвает десятки наименований и постоянно пополняется: стенки, тумбы,комоды, шкафы-купе, столы, встроенные шкафы и полки и многое другое.</h3>
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6">
                         <div class="form_block">
-                            <div class="container_mini">
+                            <div class="container_mini wow fadeInRight" data-wow-delay=".3s">
                                 <select class="container_menu">
                                 <option value="" disabled selected>Выберите <br>тип помещения</option>
                                 <option class="option_style" value="1">Спальня</option>
@@ -129,7 +141,7 @@
                                 </select><br>
                             </div>
 
-                            <div class="container_mini">
+                            <div class="container_mini wow fadeInRight" data-wow-delay=".5s">
                                 <select class="container_menu">
                                 <option value="" disabled selected>Выберите площадь помещения</option>
                                 <option value="1">10м2</option>
@@ -137,7 +149,7 @@
                                 </select><br>
                             </div>
 
-                            <div class="container_mini">
+                            <div class="container_mini wow fadeInRight" data-wow-delay=".7s">
                                 <select class="container_menu">
                                 <option value="" disabled selected>Выберите материал</option>
                                 <option value="1">ЛДСП</option>
@@ -145,7 +157,7 @@
                                 </select><br>
                             </div>
 
-                            <div class="container_mini">
+                            <div class="container_mini wow fadeInRight" data-wow-delay=".9s">
                                 <select class="container_menu">
                                 <option value="" disabled selected>Выберите изделие</option>
                                 <option value="1">Тумба</option>
@@ -153,7 +165,7 @@
                                 </select><br>
                             </div>
 
-                            <div class="container_mini">
+                            <div class="container_mini wow fadeInRight" data-wow-delay="1.1s">
                                 <input type="text" class="container_phone" placeholder="Введите Ваш номер телефона"><br>
                             </div>
                         </div>
@@ -161,14 +173,14 @@
 
                     <div class="col-xs-12 col-sm-12 col-md-6">
                         <div class="form_block">
-                            <div class="container_mini">
+                            <div class="container_mini wow fadeInDown" data-wow-delay=".9s">
                                 <textarea class="container_comments" placeholder="Ваш комментарий" value=""></textarea>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm-12 col-md-6">
-                        <div class="container_mini">
+                        <div class="container_mini wow zoomIn">
                             <input type="button" class="button_style" value="Отправить">
                         </div>
                     </div>
@@ -177,57 +189,6 @@
         </div>
     </div>
 </section>
-
-
-
-<!--
-<section id="main_form">
-    <div class="container">
-        <div class="row main_form">
-            <div class="col-xs-12 col-md-6 col-lg-4 offset-5 text-center">
-                <div class="container_mini">
-                        <select class="container_menu">
-                        <option value="" disabled selected>Выберите тип помещения</option>
-                        <option class="option_style" value="1">Спальня</option>
-                        <option class="option_style" value="2">Прихожая</option>
-                    </select><br>
-                </div>
-                <div class="container_mini">
-                        <select class="container_menu">
-                        <option value="" disabled selected>Выберите площадь помещения</option>
-                        <option value="1">10м2</option>
-                        <option value="2">15м2</option>
-                    </select><br>
-                </div>
-                <div class="container_mini">
-                        <select class="container_menu">
-                        <option value="" disabled selected>Выберите материал</option>
-                        <option value="1">ЛДСП</option>
-                        <option value="2">МДФ Эмаль</option>
-                    </select><br>
-                </div>
-                <div class="container_mini">
-                        <select class="container_menu">
-                        <option value="" disabled selected>Выберите изделие</option>
-                        <option value="1">Тумба</option>
-                        <option value="2">Шкаф</option>
-                    </select><br>
-                </div>
-                <div class="container_mini">
-                        <input type="text" name="" class="container_phone" placeholder="Введите Ваш номер телефона" value=""><br>
-                </div>
-                <div class="container_mini">
-                    <input class="button_style" type="button" value="Отправить">
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-1">
-                <div class="container_mini">
-                    <textarea class="container_comments" placeholder="Ваш комментарий" value=""></textarea>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>-->
 
 <section id="promo_us">
     <div class="container">
@@ -257,14 +218,14 @@
                     <h2 class="promo_text">Мы гарантируем</h2>
                     <h3 class="main_text">
                         <ul class="text-left">
-                            <li class="point"><p>Все заказы выполняются в срок, не превышающий 21 рабочих дней;</p></li>
-                            <li class="point"><p>Исползование только экологически чистых, изностойких материалов;</p></li>
-                            <li class="point"><p>Работа осуществляется грамотно, аккуратно, с соблюдением технологий;</p></li>
-                            <li class="point"><p>Нестадартные решения, уникальный подход к испольнению Вашего заказа;</p></li>
-                            <li class="point"><p>Доставку, установку по указанному адресу;</p></li>
-                            <li class="point"><p>Широкий ассортимент предлагаемой продукции;</p></li>
-                            <li class="point"><p>Гарантию долговечности готового изделия;</p></li>
-                            <li class="point"><p>Лояльную ценовую политику.</p></li>
+                            <li><p class="point">Все заказы выполняются в срок, не превышающий 21 рабочих дней;</p></li>
+                            <li><p class="point">Исползование только экологически чистых, изностойких материалов;</p></li>
+                            <li><p class="point">Работа осуществляется грамотно, аккуратно, с соблюдением технологий;</p></li>
+                            <li><p class="point">Нестадартные решения, уникальный подход к испольнению Вашего заказа;</p></li>
+                            <li><p class="point">Доставку, установку по указанному адресу;</p></li>
+                            <li><p class="point">Широкий ассортимент предлагаемой продукции;</p></li>
+                            <li><p class="point">Гарантию долговечности готового изделия;</p></li>
+                            <li><p class="point">Лояльную ценовую политику.</p></li>
                         </ul>
                     </h3>
                 </div>
@@ -464,7 +425,7 @@
 
 <section id="main_footer">
     <div class="container">
-        <div class="row contacts">
+        <div class="row contacts wow pulse">
             <div class="col-xs-12 col-md-7 col-lg-4 footer_menu_block offset-1">
                 <div class="promo_block">
                     <h2 class="promo_text">Наши контакты</h2>
@@ -477,7 +438,7 @@
                         </div>
                     </div>
                     <div class="contact_wrap">
-                        <div class="contact_text"><img src="images/placeholder.svg" class="contact_icon"> Москва, Зеленоград
+                        <div class="contact_text"><img src="images/placeholder.svg" class="contact_icon"> Москва, Зеленоград, ул. Заводская, д. 21А
                         </div>
                     </div>
                 </div>
@@ -487,13 +448,13 @@
                 <h2 class="footer_promo_text">Меню</h2>
                     <nav>
                         <ul class="footer_menu">
-                            <li> <a href="">Главная</a></li>
-                            <li> <a href="">Наши работы</a></li>
-                            <li> <a href="">Контакты</a></li>
-                            <li> <a href="">Сотрудничество</a></li>
-                            <li> <a href="">Блог</a></li>
-                            <li> <a href="">Как сделать заказ</a></li>
-                            <li> <a href="">Наши контакты</a></li>
+                            <li> <a href="index.html">Главная</a></li>
+                            <li> <a href="templates/our-jobs.html">Наши работы</a></li>
+                            <li> <a href="templates/cooperation.html">Сотрудничество</a></li>
+                            <li> <a href="templates/blog.html">Блог</a></li>
+                            <li> <a href="templates/how-to-make-an-order.html">Как сделать заказ</a></li>
+                            <li> <a href="templates/our-contact.html">Наши контакты</a></li>
+                            <li> <a href="templates/comment.html">Отзывы</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -529,5 +490,9 @@
 <script src="scripts/slides.js"></script>
 <script src="scripts/form.js"></script>
 <script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
 </html>

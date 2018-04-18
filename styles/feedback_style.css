@@ -254,7 +254,7 @@ Main components
   -webkit-transition: color, 0.2s;
   -moz-transition: color, 0.2s;
   transition: color, 0.2s;
-    border-radius: 1em;
+  border-radius: 1em;
 
 }
 .no-touch .cd-see-all:hover {

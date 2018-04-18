@@ -95,10 +95,19 @@
 }
 
 /* Стиль текста внутри заголовков */
-.main_text {
+.main_text, .main_text_cooperation {
     color: #808080;
     font-size: 1.2em;
     line-height: 1.5em;
+}
+
+.main_text_cooperation {
+    text-align: left;
+}
+
+.main_text li {
+    font-size: 0.8em;
+    margin-left: 1em;
 }
 
 /* Стиль текста в разделе "Мы гарантируем" */
@@ -125,7 +134,12 @@ span {
 }
 
 /* Стиль текста */
-p {
+.point {
+    font-size: 1.4em;
+    color: #808080;
+}
+
+p, em {
     font-size: 1.2em;
     color: #808080;
 }
@@ -146,6 +160,12 @@ h6 {
 
 /* -------------------- Меню, начало --------------------- */
 
+.menu_active {
+    background: #808080;
+    border-radius: 1em;
+    color: white; 
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+}
 .topmenu > li {
     display: inline-block;
 }
@@ -165,8 +185,8 @@ h6 {
     z-index: 10;
     left: 50%;
     top: 2.5em;
-    width: 0.5em;
-    height: 0.5em;
+    width: 0.4em;
+    height: 0.4em;
     background: black;
     border-radius: 50%;
     transform: translate(-50%, 20px);
@@ -239,6 +259,49 @@ nav a {
 }
 
 /* -------------------- Меню, конец --------------------- */
+
+
+
+.our_jobs_menu > li {
+    display: block;
+    text-align: left;
+    margin-left: 1em;
+    width: 25%;
+}
+
+.our_jobs_menu > li > a {
+    position: relative;
+    padding: 0.4em 0.4em;
+    font-family: "Open Sans", cursive;
+    font-size: 1.2em;
+    color: #6495ED;
+    line-height: 1;
+    letter-spacing: 0.1px;
+}
+  
+.our_jobs_menu > li > a:before {
+    content: " ";
+    position: absolute;
+    left: -5%;
+    top: 11px;
+    width: 0.4em;
+    height: 0.4em;
+    background: black;
+    border-radius: 50%;
+    opacity: 1;
+    transition: .5s;
+}
+
+.our_jobs_menu a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+  
+.our_jobs_menu li:hover a:before {
+    transform: translate(-50%, 0);
+}
+
+
 
 /* -------------------- Слайдер, начало --------------------- */
 
@@ -320,8 +383,6 @@ nav a {
 .left_menu {
     position: relative;
     height: 1em;
-    padding-top: 1em;
-    padding-bottom: 1em;
 }
 
 .left_menu {
@@ -456,6 +517,49 @@ nav a {
 }
 
 
+
+.all_left_menu > li {
+    display: block;
+    text-align: left;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.all_left_menu > li > a {
+    position: relative;
+    padding: 0.4em 0.4em;
+    font-family: "Open Sans", cursive;
+    font-size: 1.2em;
+    line-height: 1;
+    letter-spacing: 0.1px;
+}
+  
+.all_left_menu > li > a:before {
+    content: " ";
+    position: absolute;
+    z-index: 10;
+    left: -2%;
+    top: 11px;
+    width: 0.5em;
+    height: 0.5em;
+    background: black;
+    border-radius: 50%;
+    transform: translate(-50%, 20px);
+    opacity: 0;
+    transition: .3s;
+}
+
+.all_left_menu a:hover {
+    color: #6495ED;
+    text-decoration: underline;
+    cursor: pointer;
+}
+  
+.all_left_menu li:hover a:before {
+    transform: translate(-50%, 0);
+    opacity: 1;
+}
+
 /* -------------------- Подвал, начало --------------------- */
 
 #main_footer {
@@ -463,6 +567,7 @@ nav a {
     width: 100%;
     min-height: 100%;
     box-shadow: 0 0 5px;
+    margin-top: 2em;
 }
 
 .footer_menu_block {
