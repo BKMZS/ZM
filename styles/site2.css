@@ -85,6 +85,21 @@
     font-family: "Exo", sans-serif;
     font-size: 1.7em;
     word-spacing: 8px;
+    text-align: center;
+}
+
+/* Стиль текста для заголовков "Блога" */
+.promo_text_cooperation {
+    color: #6495ED;
+    padding: 1em 0;
+    text-align: left;
+    font-family: "Exo", sans-serif;
+    font-size: 1.7em;
+    word-spacing: 8px;
+}
+
+.promo_text_cooperation:hover {
+    color: #6495ED;
 }
 
 /* Стилья текста в первом заголовке, "Скидка 10%" */
@@ -101,13 +116,24 @@
     line-height: 1.5em;
 }
 
-.main_text_cooperation {
-    text-align: left;
-}
-
 .main_text li {
     font-size: 0.8em;
     margin-left: 1em;
+}
+
+/* Стиль текста "Блога" */
+.main_text_cooperation {
+    text-align: left;
+    line-height: 1.8em;
+}
+
+.jobs_text_cooperation {
+    color: #000;
+    padding: 1em 0;
+    text-align: left;
+    font-family: "Exo", sans-serif;
+    font-size: 1.7em;
+    word-spacing: 8px;
 }
 
 /* Стиль текста в разделе "Мы гарантируем" */
@@ -157,6 +183,31 @@ h6 {
 }
 
 /* -------------------- Стили текста, конец --------------------- */
+
+.promo_block {
+    margin-top: 2em;
+}
+
+/* -------------------- Блог, кнопка "читать далее", начало --------------------- */
+
+.cooperation_button {
+    color: #6495ED;
+    border: 1px solid #808080;
+    border-radius: 1em;
+    padding: 0.7em;
+    font-size: 1em;
+    background: #f5f5f5;
+}
+
+.cooperation_button:hover {
+    box-shadow: 0 0 0.7em;
+    color: #6495ED;
+    font-weight: 600;
+    background: #fff;
+    text-decoration: none;
+}
+
+/* -------------------- Блог, кнопка "читать далее", конец --------------------- */
 
 /* -------------------- Меню, начало --------------------- */
 
@@ -259,8 +310,6 @@ nav a {
 }
 
 /* -------------------- Меню, конец --------------------- */
-
-
 
 .our_jobs_menu > li {
     display: block;
@@ -499,9 +548,15 @@ nav a {
 
 /* -------------------- Форма, конец --------------------- */
 
-.promo_block {
-    margin-top: 2em;
+/* -------------------- Яндекс Карта, начало --------------------- */
+
+.map_contact {
+    margin-bottom: 1em;
+    height: 600px;
+    box-shadow: 0 0 1em;
 }
+
+/* -------------------- Яндекс Карта, конец --------------------- */
 
 .promo_photo {
     margin: 2em auto;
@@ -620,11 +675,11 @@ nav a {
 }
 
 .footer_promo_text {
-    padding: 1.1em 0;
+    padding: 0.9em 0.3em;
     margin: auto;
     color: #000;
     font-family: "Exo", sans-serif;
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: left;
 }
 
